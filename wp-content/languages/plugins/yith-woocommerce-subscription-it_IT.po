@@ -1,0 +1,1354 @@
+# Translation of Plugins - YITH WooCommerce Subscription - Stable (latest release) in Italian
+# This file is distributed under the same license as the Plugins - YITH WooCommerce Subscription - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2017-01-29 07:49:28+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/2.3.0-alpha\n"
+"Language: it\n"
+"Project-Id-Version: Plugins - YITH WooCommerce Subscription - Stable (latest release)\n"
+
+#: includes/functions.yith-wc-subscription.php:257
+msgid "year"
+msgid_plural "years"
+msgstr[0] "anno"
+msgstr[1] "anni"
+
+#: plugin-fw/licence/templates/panel/activation/activation-panel.php:97
+msgid "Club Subscription"
+msgstr "Abbonamento al club"
+
+#: plugin-fw/licence/lib/yit-licence.php:675
+msgid "Current product is not included in your YITH Club Subscription key"
+msgstr "Il prodotto corrente non è incluso nella tua chiave di abbonamento al club YITH"
+
+#: plugin-fw/lib/yit-plugin-panel.php:297
+#: plugin-fw/lib/yit-plugin-panel.php:300
+msgid "How to install premium version"
+msgstr "Come installare la versione premium"
+
+#: plugin-fw/lib/yit-plugin-panel-sidebar.php:425
+#: plugin-fw/templates/panel/sidebar/sidebar.php:3
+msgid "Show sidebar"
+msgstr "Mostra la barra laterale"
+
+#: plugin-fw/lib/yit-plugin-panel-sidebar.php:424
+#: plugin-fw/templates/panel/sidebar/sidebar.php:3
+msgid "Hide sidebar"
+msgstr "Nascondi la barra laterale"
+
+#. Author of the plugin/theme
+msgid "YITHEMES"
+msgstr "YITHEMES"
+
+#: templates/admin/premium.php:495
+msgid "Some issues related to correct %1$ssyncronisation with PayPal and Stripe service%2$s could cause delays in receiving subscription payments.%3$s To consider also this possibility, you can set a grace period (set in hours) before the current status is switched to \"overdue\", \"suspended\" or \"cancelled\"."
+msgstr "Alcuni problemi dovuti alla corretta %1$ssincronizzazione con i servizi PayPal e Stripe%2$s potrebbero causare ritardi nella ricezione dei pagamenti dagli abbonati.%3$s Per tenere in considerazione anche questa eventualità, puoi impostare un periodo di tolleranza (in ore) prima che lo stato corrente venga impostato su \"oltre la scadenza\", \"sospeso\" o \"annullato\"."
+
+#: templates/admin/premium.php:492
+msgid "Postpone status switch"
+msgstr "Rimanda il cambio di stato"
+
+#: templates/admin/premium.php:483
+msgid "No subscription will be set to \"Pending\" for too long: after three failed payment attempts, the subscription will be %1$sautomatically switched to \"cancelled\"%2$s and no possibility to restore it is given. This behaviour is applicable to payments made via Stripe or PayPal."
+msgstr "Nessun abbonamento rimarrà \"In attesa di pagamento\" per troppo tempo: dopo tre tentativi falliti, l'abbonamento sarà %1$spassato automaticamente allo stato \"annullato\"%2$s e non ci sarà alcuna possibilità di ripristinarlo. Questo funzionamento è applicabile ai pagamenti effettuati tramite Stripe o PayPal."
+
+#: templates/admin/premium.php:480
+msgid "Three failed payment attempts"
+msgstr "Tre tentativi di pagamento falliti"
+
+#: templates/admin/premium.php:465
+msgid "Did your subscription %1$srecurring spayment fail?%2$s%3$s Consider also the possibility for this to happen and %1$senable subscription automatic suspension%2$s.%3$s As soon as the payment succeeds the active status will be automatically restored"
+msgstr "Il %1$spagamento ricorrente%2$s per del tuo abbonamento non è andato a buon fine?%3$s Considera anche l'eventualità che questo possa succedere e %1$sabilia l'interruzione automatica dell'abbonamento%2$s.%3$s Non appena il pagamento andrà a buon fine, verrà ripristinato automaticamente lo stato \"attivo\""
+
+#: templates/admin/premium.php:462
+msgid "Suspend subscription automatically"
+msgstr "Sospendi l'abbonamento automaticamente"
+
+#: templates/admin/premium.php:453
+msgid "The subscription is automatically removed from database in case the order associated to it is cancelled by the admin. %1$sNo management problems%2$s, the plugin does all for you."
+msgstr "L'abbonamento viene rimosso automaticamente dal database nel caso l'ordine associato ad esso sia stato annullato dall'amministratore. %1$sNessun problema di gestione%2$s, ci pensa il plugin a farlo al tuo posto."
+
+#: templates/admin/premium.php:450
+msgid "Cancel subscription"
+msgstr "Annulla abbonamento"
+
+#: plugin-fw/templates/panel/sidebar/widgets/widgets.php:34
+msgid "Important Links"
+msgstr "Link importanti"
+
+#: plugin-fw/templates/panel/sidebar/widgets/widgets.php:28
+msgid "FREE!"
+msgstr "GRATIS!"
+
+#: plugin-fw/templates/panel/sidebar/widgets/widgets.php:24
+msgid "Despacho Theme - 100% FREE"
+msgstr "Despacho Theme - 100% GRATUITO"
+
+#: plugin-fw/templates/panel/sidebar/widgets/widgets.php:17
+msgid "Join the club"
+msgstr "Iscriviti al Club"
+
+#: includes/class.yith-wc-subscription-admin.php:411
+msgid "Changelog (current version %s)"
+msgstr "Changelog (versione attuale %s)"
+
+#: includes/class.yith-wc-subscription-admin.php:407
+msgid "WordPress support forum"
+msgstr "Forum di supporto di WordPress"
+
+#: includes/class.yith-wc-subscription-admin.php:403
+msgid "Premium live demo"
+msgstr "Anteprima versione premium"
+
+#: includes/class.yith-wc-subscription-admin.php:399
+msgid "Free Vs Premium"
+msgstr "Free Vs Premium"
+
+#: includes/class.yith-wc-subscription-admin.php:395
+msgid "Discovery premium version"
+msgstr "Scopri la versione premium"
+
+#. Author URI of the plugin/theme
+msgid "http://yithemes.com/"
+msgstr "http://yithemes.com/"
+
+#. #-#-#-#-#  tmp-yith-woocommerce-subscription.pot (YITH WooCommerce
+#. Subscription 1.0.5)  #-#-#-#-#
+#. Plugin Name of the plugin/theme
+#. #-#-#-#-#  tmp-yith-woocommerce-subscription.pot (YITH WooCommerce
+#. Subscription 1.0.5)  #-#-#-#-#
+#. Description of the plugin/theme
+msgid "YITH WooCommerce Subscription"
+msgstr "YITH WooCommerce Subscription"
+
+#: templates/admin/premium.php:435
+msgid "By combining these two powerful plugins, %1$syou will be able to create different membership plans and associate them to different subscription plans%2$s. What's the difference? Subscription gives temporary and periodical access to contents, membership gives access to different content elements in your site. A perfect combination!"
+msgstr "Combinando insieme questi due potentissimi plugin, %1$spotrai creare diversi piani di accesso contenuti ed associarli a pagamenti in abbonamento%2$s. Qual è la differenza? L'abbonamento ti dà accesso a tempo periodicamente ad un piano contenuti a tua scelta e ad ogni piano potrai associare elementi diversi dal tuo sito. Una combinazione perfetta!"
+
+#: templates/admin/premium.php:432
+msgid "Integration with YITH WooCommerce Membership"
+msgstr "Integrazione con YITH WooCommerce Membership"
+
+#: templates/admin/premium.php:423
+msgid "All activities made on %1$ssubscriptions plans are recorded and added in a related table%2$s. You will have control of every change, tracking all subscriptions made in your shop."
+msgstr "Tutte le attività %1$sregistrate negli abbonamenti vengono salvate e aggiunte ad una relativa tabella%2$s. Potrai avere il controllo su ogni cambiamento e tracciare tutti gli abbonamenti sottoscritti nel tuo negozio."
+
+#: templates/admin/premium.php:420
+msgid "Activity list"
+msgstr "Elenco attività"
+
+#: templates/admin/premium.php:405
+msgid "Two new types of coupons have been added to the standard ones provided by WooCommerce. Configure specific coupons that give your users discounts on %1$ssign-up fee%2$s or on the %1$srecurring subscription fee.%2$s"
+msgstr "Due nuovi tipi di codice promozionale in più rispetto a quelli standard forniti da WooCommerce. Configura degli specifici codici promozionali per dare degli sconti ai tuoi utenti al momento dell'%1$siscrizione%2$s o del %1$spagamento periodico.%2$s"
+
+#: templates/admin/premium.php:402
+msgid "Coupons"
+msgstr "Buoni"
+
+#: templates/admin/premium.php:393
+msgid "%1$sGet emails each time a subscription plan is paused or cancelled%2$s. At the same time, let your customers receive emails also when the payment is made, when the subscription is going to expire or when it is stopped, cancelled or resumed."
+msgstr "%1$sRicevi una notifica email ogni volta che un abbonamento viene messo in pausa o annullato%2$s. Allo stesso tempo, lascia che anche i clienti ricevano un'email ogni qualvolta viene effettuato un pagamento, un abbonamento sta per scadere o quando viene interrotto, annullato o ripristinato."
+
+#: templates/admin/premium.php:390
+msgid "Send emails automatically "
+msgstr "Invia email automaticamente"
+
+#: templates/admin/premium.php:375
+msgid "Create subscription plans with different content and give users the possibility to %1$sswitch from a plan to another%2$s. They just have to click on the specific button available in \"My Account\" page and, starting from the following month, they will begin paying for and benefit from the new plan they have subscribed."
+msgstr "Crea abbonamenti con contenuti diversi e da' ai tuoi utenti la possibilità di %1$spassare da un piano all'altro%2$s. Gli basterà fare clic sullo specifico pulsante disponibile nella pagina \"Il mio account\" e a partire dal mese successivo, inizieranno a pagare ed usufruire dei contenuti del nuovo piano a cui si sono iscritti."
+
+#: templates/admin/premium.php:372
+msgid "Upgrade and downgrade"
+msgstr "Upgrade e downgrade"
+
+#: templates/admin/premium.php:363
+msgid "For each subscription plan both users and admin can access to %1$sdetailed information%2$s, such as subscription start and end date or info about products associated to the subscription."
+msgstr "Per ogni abbonamento sia l'amministratore sia gli amministratori potranno consultare %1$sinformazioni dettagliate%2$s, come la data di inizio e di scadenza dell'abbonamento o le informazioni sui prodotti associati ad esso."
+
+#: templates/admin/premium.php:360
+msgid "Subscription detail page"
+msgstr "Pagina dettaglio abbonamento"
+
+#: templates/admin/premium.php:345
+msgid "From \"My Account\" page, every user will be able to %1$smanage cancellation and/or renewal%2$s of the active subscription.%3$s Give your users as many tools as you can to improve services in your shop."
+msgstr "Dalla pagina \"Il mio account\" tutti gli utenti potranno %1$sgestire l'annullamento e/o il rinnovo%2$s dell'abbonamento attivo.%3$s Metti a disposizione dei tuoi utenti tutti gli strumenti che possono migliorare i servizi nel tuo negozio."
+
+#: templates/admin/premium.php:342
+msgid "Cancel and renew subscription"
+msgstr "Annulla e rinnova l'abbonamento"
+
+#: templates/admin/premium.php:333
+msgid "All users willing to subscribe will pay a one-time fee when signing up in addition to periodical fees. You can choose to ask for a %1$ssign-up fee%2$s or ask only for the periodical fee."
+msgstr "Tutti gli utenti che vogliono iscriversi pagheranno una quota iniziale, una tantum, in aggiunta alla mensilità. Puoi scegliere di chiedere %1$suna quota iniziale%2$s aggiuntiva o soltanto la quota periodica."
+
+#: templates/admin/premium.php:330
+msgid "Sign-up fee"
+msgstr "Quota di iscrizione"
+
+#: templates/admin/premium.php:315
+msgid "Use the most common strategy on the market to convince your customers about what you offer.%1$s Give them the opportunity to access at no costs%2$s. When trial period ends and if users are interested in it, they will be able to subscribe."
+msgstr "Utilizza la strategia più diffusa nel mercato per convincere i tuoi clienti della tua offerta.%1$s Da' loro la possibilità di accedere gratuitamente%2$s. Quando termina il periodo di prova e gli utenti sono interessati, potranno sottoscrivere l'abbonamento."
+
+#: templates/admin/premium.php:312
+msgid "Trial period"
+msgstr "Periodo di prova"
+
+#: templates/admin/premium.php:303
+msgid "Allow payment deferment if you do not want that the subscription is deleted as soon as a fee is not paid. Whatever could be the reason for a missing payment. Set the duration of a deferment period during which users will be able to %1$scatch up missed payments%2$s: during this time, you can still allow access to content or hide it temporarily. "
+msgstr "Autorizza il rinvio del pagamento se non vuoi che l'abbonamento venga annullato non appena una rata non viene pagata. Qualsiasi potrebbe essere il motivo di un mancato pagamento. Imposta la durata di un periodo di dilazione durante il quale gli utenti potranno %1$srimettersi in pari con i pagamenti%2$s: durante questo arco di tempo, potrai scegliere se consentire ancora l'accesso ai contenuti o nasconderli temporaneamente."
+
+#: templates/admin/premium.php:300
+msgid "Defer payment"
+msgstr "Rinvia il pagamento"
+
+#: templates/admin/premium.php:285
+msgid "Users can pause their own subscription from their reserved area: easy! This way, they can benefit from contents they are paying for in the best way and will be able to suspend the subscription for the time they cannot use it. %3$s Consequently %1$ssubscription expiry date will be postponed as well%2$s."
+msgstr "Gli utenti possono mettere in pausa il loro abbonamento dalla loro area riservata: semplicissimo! In questo modo potranno usufuire dei contenuti per cui stanno pagando nel modo migliore e potranno sospendere l'abbonamento per il periodo di tempo in cui non lo utilizzano. %3$s Di conseguenza %1$sanche la data di scadenza dell'abbonamento sarà posticipata%2$s."
+
+#: templates/admin/premium.php:282
+msgid "Pause the subscription"
+msgstr "Metti l'abbonamento in pausa"
+
+#: templates/admin/premium.php:273
+msgid "Extend subscription possibilities to every product in your shop! With the premium version of this plugin you can configure %1$sdifferent types of subscription%2$s for the same product and exploit the potential of WooCommerce variable products. Free to act as you wish!"
+msgstr "Estendi la possibilità di creare un abbonamento ad ogni prodotto del tuo negozio! Con la versione premium del plugin, puoi configurare %1$sdiversi tipi di abbonamento%2$s per lo stesso prodotto e sfrutta tutto il potenziale dei prodotti variabili di WooCommerce. Libero di agire come preferisci!"
+
+#: templates/admin/premium.php:270
+msgid "Support to variable products"
+msgstr "Funzionamento con i prodotti variabili"
+
+#: templates/admin/premium.php:263
+msgid "Premium Features"
+msgstr "Dettagli Premium "
+
+#: templates/admin/premium.php:257 templates/admin/premium.php:511
+msgid "to the premium version"
+msgstr "alla versione premium"
+
+#: templates/admin/premium.php:256 templates/admin/premium.php:510
+msgid "UPGRADE"
+msgstr "AGGIORNA"
+
+#: templates/admin/premium.php:253 templates/admin/premium.php:507
+msgid "Upgrade to %1$spremium version%2$s of %1$sYITH WooCommerce Subscription%2$s to benefit from all features!"
+msgstr "Aggiorna alla %1$sversione premium%2$s di %1$sYITH WooCommerce Subscription%2$s per usufruire di tutte le sue funzionalità!"
+
+#: plugin-options/general-options.php:14
+msgid "Enable Subscription"
+msgstr "Abilita Subscription"
+
+#: plugin-options/general-options.php:8
+msgid "General settings"
+msgstr "Impostazioni generali"
+
+#: plugin-fw/templates/panel/woocommerce/woocommerce-form.php:18
+msgid "Reset Defaults"
+msgstr "Ripristina impostazioni iniziali"
+
+#: plugin-fw/templates/panel/types/upload.php:32
+msgid "Reset"
+msgstr "Ripristina"
+
+#: plugin-fw/templates/metaboxes/types/typography.php:100
+msgid "Italic bold"
+msgstr "Grassetto corsivo"
+
+#: plugin-fw/templates/metaboxes/types/typography.php:99
+msgid "Italic"
+msgstr "Corsivo"
+
+#: plugin-fw/templates/metaboxes/types/typography.php:98
+msgid "Extra bold"
+msgstr "Extra bold"
+
+#: plugin-fw/templates/metaboxes/types/typography.php:97
+msgid "Bold"
+msgstr "Grassetto"
+
+#: plugin-fw/templates/metaboxes/types/typography.php:96
+msgid "Regular"
+msgstr "Normale"
+
+#: plugin-fw/templates/metaboxes/types/typography.php:71
+msgid "Google fonts"
+msgstr "Google fonts"
+
+#: plugin-fw/templates/metaboxes/types/typography.php:59
+#: plugin-fw/templates/metaboxes/types/typography.php:153
+#: plugin-fw/templates/metaboxes/types/typography.php:217
+msgid "Web fonts"
+msgstr "Web fonts"
+
+#: plugin-fw/templates/metaboxes/types/typography.php:45
+msgid "rem"
+msgstr "rem"
+
+#: plugin-fw/templates/metaboxes/types/typography.php:44
+msgid "pt"
+msgstr "pt"
+
+#: plugin-fw/templates/metaboxes/types/typography.php:43
+msgid "em"
+msgstr "em"
+
+#: plugin-fw/templates/metaboxes/types/typography.php:42
+msgid "px"
+msgstr "px"
+
+#: plugin-fw/templates/metaboxes/types/sidebars.php:62
+msgid "Right Sidebar"
+msgstr "Barra laterale destra"
+
+#: plugin-fw/templates/metaboxes/types/sidebars.php:51
+msgid "Left Sidebar"
+msgstr "Barra laterale sinistra"
+
+#: plugin-fw/templates/metaboxes/types/sidebar-layout.php:34
+#: plugin-fw/templates/metaboxes/types/sidebars.php:53
+#: plugin-fw/templates/metaboxes/types/sidebars.php:64
+msgid "Choose a sidebar"
+msgstr "Scegli una barra laterale"
+
+#: plugin-fw/templates/metaboxes/types/sidebar-layout.php:31
+#: plugin-fw/templates/metaboxes/types/sidebars.php:39
+msgid "Right sidebar"
+msgstr "Barra laterale destra"
+
+#: plugin-fw/templates/metaboxes/types/sidebar-layout.php:28
+#: plugin-fw/templates/metaboxes/types/sidebars.php:42
+#: plugin-fw/templates/metaboxes/types/sidebars.php:45
+msgid "No sidebar"
+msgstr "Nessuna barra laterale"
+
+#: plugin-fw/templates/metaboxes/types/sidebar-layout.php:25
+#: plugin-fw/templates/metaboxes/types/sidebars.php:36
+msgid "Left sidebar"
+msgstr "Barra laterale sinistra"
+
+#: plugin-fw/templates/metaboxes/types/images.php:75
+msgid "Are you sure you want to remove this image?"
+msgstr "Confermi di voler rimuovere questa immagine?"
+
+#: plugin-fw/templates/metaboxes/types/images.php:42
+msgid "Upload new images"
+msgstr "Carica nuove immagini"
+
+#: plugin-fw/templates/metaboxes/types/image-gallery.php:45
+msgid "Add images"
+msgstr "Aggiungi immagini"
+
+#: plugin-fw/templates/metaboxes/types/image-gallery.php:45
+msgid "Add to gallery"
+msgstr "Aggiungi alla galleria"
+
+#: plugin-fw/templates/metaboxes/types/image-gallery.php:45
+msgid "Add Images to Gallery"
+msgstr "Aggiungi immagini alla galleria"
+
+#: plugin-fw/templates/metaboxes/types/image-gallery.php:40
+#: plugin-fw/templates/metaboxes/types/image-gallery.php:45
+#: plugin-fw/templates/metaboxes/types/images.php:38
+#: plugin-fw/templates/metaboxes/types/images.php:64
+msgid "Delete image"
+msgstr "Rimuovi immagine"
+
+#: plugin-fw/templates/metaboxes/types/icon-list.php:91
+msgid "(Default: <i %s></i> )"
+msgstr "(Default: <i %s></i> )"
+
+#: plugin-fw/templates/metaboxes/types/icon-list.php:89
+msgid "(Default: %s <img src=\"%s\"/>)"
+msgstr "(Default: %s <img src=\"%s\"/>)"
+
+#: plugin-fw/templates/metaboxes/types/customtabs.php:107
+msgid "Do you want to remove the custom tab?"
+msgstr "Vuoi rimuovere la scheda personalizzata?"
+
+#: plugin-fw/templates/metaboxes/types/customtabs.php:65
+msgid "Add custom product tab"
+msgstr "Aggiungi scheda prodotto personalizzata"
+
+#: plugin-fw/templates/metaboxes/types/customtabs.php:53
+#: plugin-fw/templates/metaboxes/types/customtabs.php:96
+msgid "Content of the tab. (HTML is supported)"
+msgstr "Contenuto della scheda (codice HTML supportato)."
+
+#: plugin-fw/templates/metaboxes/types/customtabs.php:52
+#: plugin-fw/templates/metaboxes/types/customtabs.php:95
+msgid "Value"
+msgstr "Valore"
+
+#: plugin-fw/templates/metaboxes/types/customtabs.php:28
+msgid "Expand all"
+msgstr "Espandi tutti"
+
+#: plugin-fw/templates/metaboxes/types/customtabs.php:28
+msgid "Close all"
+msgstr "Chiudi tutti"
+
+#: plugin-fw/templates/metaboxes/types/contactform.php:247
+#: plugin-fw/templates/metaboxes/types/contactform.php:421
+msgid "Set field length."
+msgstr "Seleziona lunghezza campo."
+
+#: plugin-fw/templates/metaboxes/types/contactform.php:222
+#: plugin-fw/templates/metaboxes/types/contactform.php:409
+msgid "Width"
+msgstr "Larghezza"
+
+#: plugin-fw/templates/metaboxes/types/contactform.php:217
+#: plugin-fw/templates/metaboxes/types/contactform.php:405
+msgid "Insert an icon for more personalization."
+msgstr "Inserisci un'icona per ulteriore personalizzazione."
+
+#: plugin-fw/templates/metaboxes/types/contactform.php:209
+#: plugin-fw/templates/metaboxes/types/contactform.php:397
+#: plugin-fw/templates/metaboxes/types/icon-list.php:75
+#: plugin-fw/templates/metaboxes/types/select-icon.php:39
+msgid "Image preview"
+msgstr "Anteprima immagine"
+
+#: plugin-fw/templates/metaboxes/types/contactform.php:203
+#: plugin-fw/templates/metaboxes/types/contactform.php:391
+#: plugin-fw/templates/metaboxes/types/icon-list.php:69
+#: plugin-fw/templates/metaboxes/types/select-icon.php:33
+#: plugin-fw/templates/metaboxes/types/upload.php:21
+#: plugin-fw/templates/panel/types/upload.php:31
+#: plugin-fw/templates/panel/woocommerce/woocommerce-upload.php:40
+msgid "Upload"
+msgstr "Carica"
+
+#: plugin-fw/templates/metaboxes/types/contactform.php:175
+#: plugin-fw/templates/metaboxes/types/contactform.php:367
+msgid "Icon"
+msgstr "Icona"
+
+#: plugin-fw/templates/metaboxes/types/contactform.php:170
+#: plugin-fw/templates/metaboxes/types/contactform.php:362
+msgid "Insert additional class(es) (separated by commas) for more personalization."
+msgstr "Inserisci una o più classi (separate da virgole) per una ulteriore personalizzazione."
+
+#: plugin-fw/templates/metaboxes/types/contactform.php:166
+#: plugin-fw/templates/metaboxes/types/contactform.php:358
+msgid "Class"
+msgstr "Classe"
+
+#: plugin-fw/templates/metaboxes/types/contactform.php:161
+#: plugin-fw/templates/metaboxes/types/contactform.php:353
+msgid "Select this if it is the email you can reply to."
+msgstr "Seleziona questo se è l'email a cui poter rispondere. "
+
+#: plugin-fw/templates/metaboxes/types/contactform.php:157
+#: plugin-fw/templates/metaboxes/types/contactform.php:349
+msgid "Reply To"
+msgstr "Rispondi a"
+
+#: plugin-fw/templates/metaboxes/types/contactform.php:152
+#: plugin-fw/templates/metaboxes/types/contactform.php:344
+msgid "Select this option if the email must be valid."
+msgstr "Seleziona questa opzione se l'email inserita deve essere esistente."
+
+#: plugin-fw/templates/metaboxes/types/contactform.php:143
+#: plugin-fw/templates/metaboxes/types/contactform.php:335
+msgid "Select this option if it must be required."
+msgstr "Seleziona questa opzione se deve essere obbligatoria."
+
+#: plugin-fw/templates/metaboxes/types/contactform.php:139
+#: plugin-fw/templates/metaboxes/types/contactform.php:331
+msgid "Required"
+msgstr "Obbligatorio"
+
+#: plugin-fw/templates/metaboxes/types/contactform.php:134
+#: plugin-fw/templates/metaboxes/types/contactform.php:326
+msgid "Insert the error message for validation."
+msgstr "Inserisci il messaggio di errore per la validazione"
+
+#: plugin-fw/templates/metaboxes/types/contactform.php:130
+#: plugin-fw/templates/metaboxes/types/contactform.php:322
+msgid "Error Message"
+msgstr "Messaggio di errore"
+
+#: plugin-fw/templates/metaboxes/types/contactform.php:124
+#: plugin-fw/templates/metaboxes/types/contactform.php:316
+#: plugin-fw/templates/metaboxes/types/contactform.php:436
+msgid "Delete option"
+msgstr "Cancella opzione"
+
+#: plugin-fw/templates/metaboxes/types/contactform.php:121
+#: plugin-fw/templates/metaboxes/types/contactform.php:313
+#: plugin-fw/templates/metaboxes/types/contactform.php:436
+msgid "Selected"
+msgstr "Selezionato"
+
+#: plugin-fw/templates/metaboxes/types/contactform.php:118
+#: plugin-fw/templates/metaboxes/types/contactform.php:310
+msgid "Add option"
+msgstr "Aggiungi opzione"
+
+#: plugin-fw/templates/metaboxes/types/contactform.php:117
+#: plugin-fw/templates/metaboxes/types/contactform.php:309
+msgid "Add options "
+msgstr "Aggiungi opzioni"
+
+#: plugin-fw/templates/metaboxes/types/contactform.php:112
+#: plugin-fw/templates/metaboxes/types/contactform.php:304
+msgid "Select this option if you want this field appears as already checked."
+msgstr "Seleziona questa opzione se vuoi che il campo appaia già selezionato."
+
+#: plugin-fw/templates/metaboxes/types/contactform.php:108
+#: plugin-fw/templates/metaboxes/types/contactform.php:300
+msgid "Checked"
+msgstr "Selezionato"
+
+#: plugin-fw/templates/metaboxes/types/contactform.php:103
+#: plugin-fw/templates/metaboxes/types/contactform.php:295
+msgid "Select the type for this field."
+msgstr "Seleziona il tipo di campo."
+
+#: plugin-fw/templates/metaboxes/types/contactform.php:95
+#: plugin-fw/templates/metaboxes/types/contactform.php:287
+msgid "Field Type"
+msgstr "Tipologia campo"
+
+#: plugin-fw/templates/metaboxes/types/contactform.php:90
+#: plugin-fw/templates/metaboxes/types/contactform.php:282
+msgid "REQUIRED: Field identification name to be entered into email body. <strong>Note:</strong>Use only lowercase characters and underscores."
+msgstr "RICHIESTO: Nome identificativo del campo da inserire nel corpo dell'email. <strong>Nota:</strong>Puoi utilizzare solamente caratteri minuscoli e underscore."
+
+#: plugin-fw/templates/metaboxes/types/contactform.php:86
+#: plugin-fw/templates/metaboxes/types/contactform.php:278
+msgid "Data Name"
+msgstr "Nome dati"
+
+#: plugin-fw/templates/metaboxes/types/contactform.php:81
+#: plugin-fw/templates/metaboxes/types/contactform.php:273
+msgid "Insert the title for the field."
+msgstr "Inserisci il titolo per il campo"
+
+#: plugin-fw/templates/metaboxes/types/contactform.php:77
+#: plugin-fw/templates/metaboxes/types/contactform.php:269
+msgid "Field Title"
+msgstr "Titolo campo"
+
+#: plugin-fw/templates/metaboxes/types/contactform.php:70
+#: plugin-fw/templates/metaboxes/types/contactform.php:262
+msgid "Click to toggle"
+msgstr "Fai clic per aprire/chiudere"
+
+#: plugin-fw/templates/metaboxes/types/contactform.php:69
+#: plugin-fw/templates/metaboxes/types/contactform.php:261
+#: plugin-fw/templates/metaboxes/types/customtabs.php:37
+#: plugin-fw/templates/metaboxes/types/customtabs.php:82
+msgid "Remove"
+msgstr "Rimuovi"
+
+#: plugin-fw/templates/metaboxes/types/contactform.php:60
+msgid "Add field"
+msgstr "Aggiungi campo"
+
+#: plugin-fw/templates/metaboxes/types/contactform.php:49
+#: plugin-fw/templates/metaboxes/types/responsivesliders.php:24
+msgid "None"
+msgstr "Nessuno"
+
+#: plugin-fw/templates/metaboxes/types/contactform.php:48
+msgid "Custom Icon"
+msgstr "Icona personalizzata"
+
+#: plugin-fw/templates/metaboxes/types/contactform.php:47
+msgid "Theme Icon"
+msgstr "Icona tema"
+
+#: plugin-fw/templates/metaboxes/types/contactform.php:13
+msgid "File Upload"
+msgstr "Carica file"
+
+#: plugin-fw/templates/metaboxes/types/contactform.php:12
+msgid "Password Field"
+msgstr "Campo password"
+
+#: plugin-fw/templates/metaboxes/types/contactform.php:11
+msgid "Radio Input"
+msgstr "Radio input"
+
+#: plugin-fw/templates/metaboxes/types/contactform.php:10
+msgid "Textarea"
+msgstr "Textarea"
+
+#: plugin-fw/templates/metaboxes/types/contactform.php:9
+msgid "Select"
+msgstr "Select"
+
+#: plugin-fw/templates/metaboxes/types/contactform.php:8
+msgid "Checkbox"
+msgstr "Checkbox"
+
+#: plugin-fw/templates/metaboxes/types/contactform.php:7
+msgid "Text Input"
+msgstr "Text input"
+
+#: plugin-fw/templates/metaboxes/types/categories.php:46
+msgid "Add"
+msgstr "Aggiungi"
+
+#: plugin-fw/templates/metaboxes/types/categories.php:42
+msgid "+ Add New Category"
+msgstr "+ Aggiungi nuova categoria"
+
+#: plugin-fw/templates/metaboxes/types/categories.php:36
+msgid "No categories."
+msgstr "Nessuna categoria"
+
+#: plugin-fw/templates/metaboxes/types/ajax-products.php:23
+msgid "Search for a product"
+msgstr "Cerca un prodotto"
+
+#: plugin-fw/licence/templates/panel/activation/activation-panel.php:228
+msgid "Renew license"
+msgstr "Rinnova la licenza"
+
+#: plugin-fw/licence/templates/panel/activation/activation-panel.php:226
+msgid "Order again"
+msgstr "Acquista di nuovo"
+
+#: plugin-fw/licence/templates/panel/activation/activation-panel.php:190
+msgid "Expired"
+msgstr "Non più valido"
+
+#: plugin-fw/licence/templates/panel/activation/activation-panel.php:160
+msgid "Banned"
+msgstr "Bloccato"
+
+#: plugin-fw/licence/templates/panel/activation/activation-panel.php:147
+#: plugin-fw/licence/templates/panel/activation/activation-panel.php:204
+msgid "Renew"
+msgstr "Rinnova"
+
+#: plugin-fw/licence/templates/panel/activation/activation-panel.php:142
+msgid "Deactivate"
+msgstr "Disattiva"
+
+#: plugin-fw/licence/templates/panel/activation/activation-panel.php:126
+msgid "%1s out of %2s"
+msgstr "%1s di %2s"
+
+#: plugin-fw/licence/templates/panel/activation/activation-panel.php:101
+msgid "License Actions"
+msgstr "Azioni licenza"
+
+#: plugin-fw/licence/templates/panel/activation/activation-panel.php:95
+msgid "Remaining"
+msgstr "Tempo rimanente"
+
+#: plugin-fw/licence/templates/panel/activation/activation-panel.php:86
+#: plugin-fw/licence/templates/panel/activation/activation-panel.php:164
+#: plugin-fw/licence/templates/panel/activation/activation-panel.php:194
+msgid "Product Name"
+msgstr "Nome prodotto"
+
+#: plugin-fw/licence/templates/panel/activation/activation-panel.php:80
+msgid "Activated"
+msgstr "Attivato"
+
+#: plugin-fw/licence/templates/panel/activation/activation-panel.php:61
+msgid "Activate"
+msgstr "Attiva"
+
+#: plugin-fw/licence/templates/panel/activation/activation-panel.php:42
+msgid "Product to activate"
+msgid_plural "Products to activate"
+msgstr[0] "Prodotto da attivare"
+msgstr[1] "Prodotti da attivare"
+
+#: plugin-fw/licence/templates/panel/activation/activation-panel.php:29
+msgid "Update license information"
+msgstr "Aggiorna informazioni licenza"
+
+#: plugin-fw/licence/templates/panel/activation/activation-panel.php:27
+msgid "Have you updated your licenses? Have you asked for an extension? Update information concerning your products."
+msgstr "Hai aggiornato la tua licenza? Hai richiesto un'estensione? Aggiorna le informazioni dei tuoi prodotti."
+
+#: plugin-fw/licence/templates/panel/activation/activation-panel.php:23
+msgid "Yithemes License Activation"
+msgstr "Attivazione licenza YIThemes"
+
+#: plugin-fw/licence/lib/yit-theme-licence.php:163
+msgid ""
+"If you have purchased one of our products before 27 January 2015, you can benefit from support and updates (the services offered with the license)\n"
+"                    until 27 January 2016 and you do not have to purchase it again to get a new license key, because, before this date, your license used to be activated automatically by our system.\n"
+"                    After 27 January 2016, instead, if you want to benefit from support and updates you have to buy a new license and activate it through the license key you will be\n"
+"                    provided with and that you can find in your YIThemes account, in section \"My licenses\"."
+msgstr ""
+"Se hai acquistato uno dei nostri prodotti prima del 27 gennaio 2015, potrai usufruire di supporto e aggiornamenti (servizi inclusi nella licenza)\n"
+"fino al 27 gennaio 2016 e non dovrai riacquistare il prodotto per ottenere una chiave di licenza, poiché prima di questa data il tuo prodotto veniva automaticamente attivato dal nostro sistema.\n"
+"Dopo il 27 gennaio 2016, invece, se vorrai usufruire di supporto e aggiornamenti dovrai acquistare una nuova licenza e attivarla con il codice che ti verrà\n"
+"fornito e che puoi trovare nella tua area riservata su YIThemes, nella sezione \"My licenses\"."
+
+#: plugin-fw/licence/lib/yit-theme-licence.php:159
+msgid "I cannot find the license key for activating the theme I have bought some time ago. Where can I find it?"
+msgstr "Non riesco a trovare la chiave di licenza per l'attivazione del tema che ho acquistato diverso tempo fa. Dove posso trovarla?"
+
+#: plugin-fw/licence/lib/yit-theme-licence.php:117
+#: plugin-fw/licence/lib/yit-theme-licence.php:118
+msgid "%s"
+msgstr "%s"
+
+#: plugin-fw/licence/lib/yit-plugin-licence.php:67
+#: plugin-fw/licence/lib/yit-plugin-licence.php:68
+#: plugin-fw/licence/lib/yit-theme-licence.php:69
+#: plugin-fw/licence/lib/yit-theme-licence.php:70
+#: plugin-fw/licence/lib/yit-theme-licence.php:109
+#: plugin-fw/licence/lib/yit-theme-licence.php:110
+msgid "License Activation"
+msgstr "Attivazione licenza"
+
+#: plugin-fw/licence/lib/yit-licence.php:677
+msgid "License key deactivated for website"
+msgstr "Chiave di licenza disattivata per il sito web"
+
+#: plugin-fw/licence/lib/yit-licence.php:676
+msgid "License successfully activated"
+msgstr "Licenza attivata con successo"
+
+#: plugin-fw/licence/lib/yit-licence.php:676
+msgid "Great"
+msgstr "Grande!"
+
+#: plugin-fw/licence/lib/yit-licence.php:674
+msgid "License key has been banned"
+msgstr "La chiave di licenza è stata bloccata"
+
+#: plugin-fw/licence/lib/yit-licence.php:673
+msgid "License key has expired"
+msgstr "La chiave di licenza è scaduta"
+
+#: plugin-fw/licence/lib/yit-licence.php:672
+msgid "Invalid security key"
+msgstr "Chiave di sicurezza non valida"
+
+#: plugin-fw/licence/lib/yit-licence.php:671
+msgid "Invalid instance ID"
+msgstr "Istanza ID non valida"
+
+#: plugin-fw/licence/lib/yit-licence.php:670
+msgid "Maximum number of activations exceeded"
+msgstr "Hai raggiunto il numero massimo di attivazioni"
+
+#: plugin-fw/licence/lib/yit-licence.php:669
+msgid "Software has been deactivated"
+msgstr "Il software è stato disattivato"
+
+#: plugin-fw/licence/lib/yit-licence.php:668
+msgid "Invalid license key"
+msgstr "Chiave di licenza non valida"
+
+#: plugin-fw/licence/lib/yit-licence.php:667
+msgid "Invalid Request"
+msgstr "Richiesta non valida"
+
+#: plugin-fw/licence/lib/yit-licence.php:187
+msgid "Are you sure you want to deactivate the license for current site?"
+msgstr "Sei sicuro di voler disattivare la licenza per questo sito?"
+
+#: plugin-fw/licence/lib/yit-licence.php:186
+#: plugin-fw/licence/templates/panel/activation/activation-panel.php:89
+#: plugin-fw/licence/templates/panel/activation/activation-panel.php:167
+#: plugin-fw/licence/templates/panel/activation/activation-panel.php:198
+msgid "License Key"
+msgstr "Chiave di licenza"
+
+#: plugin-fw/licence/lib/yit-licence.php:185
+#: plugin-fw/licence/templates/panel/activation/activation-panel.php:88
+#: plugin-fw/licence/templates/panel/activation/activation-panel.php:166
+#: plugin-fw/licence/templates/panel/activation/activation-panel.php:197
+#: plugin-fw/templates/metaboxes/types/contactform.php:148
+#: plugin-fw/templates/metaboxes/types/contactform.php:340
+msgid "Email"
+msgstr "Email"
+
+#: plugin-fw/licence/lib/yit-licence.php:184
+msgid "Unable to contact the remote server, please try again later. Thanks!"
+msgstr "Impossibile contattare il server remoto, prova più tardi. Grazie!"
+
+#: plugin-fw/licence/lib/yit-licence.php:183
+msgid "%s and %s fields cannot be empty"
+msgstr "I campi %s e %s non possono essere vuoti"
+
+#: plugin-fw/licence/lib/yit-licence.php:182
+msgctxt "%s = field name"
+msgid "%s field cannot be empty"
+msgstr "Il campo %s non può essere vuoto"
+
+#: plugin-fw/lib/yit-upgrade.php:537
+msgid "Update Plugin"
+msgstr "Aggiorna plugin"
+
+#: plugin-fw/lib/yit-upgrade.php:530
+msgid "You do not have sufficient permissions to update the plugins for this site."
+msgstr "Non sei in possesso delle autorizzazioni necessarie per aggiornare i plugin in questo sito."
+
+#: plugin-fw/lib/yit-upgrade.php:526
+msgid "You can't update the plugins for this site."
+msgstr "Non è possibile aggiornare i plugin per questo sito."
+
+#: plugin-fw/lib/yit-upgrade.php:452
+msgid "There is a new version of %1$s available. <a href=\"%2$s\" class=\"thickbox yit-changelog-button open-plugin-details-modal\" title=\"%3$s\">View version %4$s details</a> or <a href=\"%5$s\">update now</a>."
+msgstr "È disponibile una nuova versioni di %1$s. <a href=\"%2$s\" class=\"thickbox yit-changelog-button open-plugin-details-modal\" title=\"%3$s\">Visualizza i dettagli della versione %4$s</a> oppure <a href=\"%5$s\">aggiorna adesso</a>."
+
+#: plugin-fw/lib/yit-upgrade.php:450
+msgid "There is a new version of %1$s available. <a href=\"%2$s\" class=\"thickbox yit-changelog-button open-plugin-details-modal\" title=\"%3$s\">View version %4$s details</a>. <em>Automatic update is unavailable for this plugin, please <a href=\"%5$s\" title=\"License activation\">activate</a> your copy of %6s.</em>"
+msgstr "È disponibile una nuova versione di %1$s. <a href=\"%2$s\" class=\"thickbox yit-changelog-button open-plugin-details-modal\" title=\"%3$s\">Visualizza i dettagli della versione %4$s</a>. <em>Gli aggiornamenti automatici non sono disponibili per questo plugin, per piacere <a href=\"%5$s\" title=\"License activation\">attivi</a> la sua copia di %6s.</em>"
+
+#: plugin-fw/lib/yit-upgrade.php:448
+msgid "There is a new version of %1$s available. <a href=\"%2$s\" class=\"thickbox yit-changelog-button open-plugin-details-modal\" title=\"%3$s\">View version %4$s details</a>. <em>You have to activate the plugin on a single site of the network to benefit from automatic updates.</em>"
+msgstr "È disponibile una nuova versioni di %1$s.  <a href=\"%2$s\" class=\"thickbox yit-changelog-button open-plugin-details-modal\" title=\"%3$s\">Visualizza i dettagli della versione %4$s</a>. <em>Per poter usufruire degli aggiornamenti automatici è necessario attivare il plugin su un solo sito.</em>"
+
+#: plugin-fw/lib/yit-upgrade.php:446
+msgid "There is a new version of %1$s available. <a href=\"%2$s\" class=\"thickbox yit-changelog-button open-plugin-details-modal\" title=\"%3$s\">View version %4$s details</a>."
+msgstr "È disponibile una nuova versione di %1$s. <a href=\"%2$s\" class=\"thickbox yit-changelog-button open-plugin-details-modal\" title=\"%3$s\">Visualizza i dettagli della versione %4$s</a>."
+
+#: plugin-fw/lib/yit-upgrade.php:287
+msgid "Could not create Temporary file."
+msgstr "Non è stato possibile creare il file temporaneo."
+
+#: plugin-fw/lib/yit-upgrade.php:274
+msgid "Invalid URL Provided."
+msgstr "L'URL inserito non è valido."
+
+#: plugin-fw/lib/yit-upgrade.php:240
+msgid "YIThemes Repository"
+msgstr "Repository YIThemes"
+
+#: plugin-fw/lib/yit-upgrade.php:139
+msgid "Update now."
+msgstr "Aggiorna adesso."
+
+#: plugin-fw/lib/yit-upgrade.php:138
+msgid "please <a href=\"%activate_link%\">activate</a> your copy of %plugin_name%."
+msgstr "per favore, <a href=\"%activate_link%\">attiva</a> la tua copia di %plugin_name%."
+
+#: plugin-fw/lib/yit-upgrade.php:137
+msgid "Automatic update is unavailable for this plugin,"
+msgstr "L'aggiornamento automatico non è disponibile per questo plugin,"
+
+#: plugin-fw/lib/yit-upgrade.php:136
+msgid "View version %latest% details."
+msgstr "Visualizza i dettagli della versione %latest%."
+
+#: plugin-fw/lib/yit-upgrade.php:135
+msgid "There is a new version of %plugin_name% available."
+msgstr "Una nuova versione di %plugin_name% è disponibile."
+
+#: plugin-fw/lib/yit-pointers.php:85
+msgid ""
+"From now on, you can find the option panel of YITH plugins in YITH Plugins menu.\n"
+"                                    Every time one of our plugins is added, a new entry will be added to this menu.\n"
+"                                    For example, after the update, plugin options (such as for YITH WooCommerce Wishlist, YITH WooCommerce Ajax Search, etc.)\n"
+"                                    will be moved from previous location to YITH Plugins tab."
+msgstr ""
+"Da ora in poi, troverai tutte le opzioni dei tuoi plugin nel menu YITH Plugins.\n"
+"Ogni volta che aggiornerai i nostri plugin, troverai una nuova voce in questo menu.\n"
+"Per esempio, dopo l'aggiornamento, le opzioni del plugin (come per esempio quelle di YITH WooCommerce Wishlist, YITH WooCommerce Ajax Search etc.)\n"
+"saranno trasferite nella scheda YITH Plugins."
+
+#: plugin-fw/lib/yit-pointers.php:84
+msgid "Plugins Upgraded"
+msgstr "Plugin aggiornati"
+
+#: plugin-fw/lib/yit-pointers.php:74 plugin-fw/lib/yit-pointers.php:90
+msgid "and"
+msgstr "e"
+
+#: plugin-fw/lib/yit-pointers.php:73 plugin-fw/lib/yit-pointers.php:89
+msgid "Discover all our plugins available on:"
+msgstr "Scopri tutti i plugin disponibili su:"
+
+#: plugin-fw/lib/yit-pointers.php:71
+msgid ""
+"From now on, you can find all plugin options in YITH Plugins menu.\n"
+"                                     Plugin customization settings will be available as a new entry in YITH Plugins menu."
+msgstr ""
+"Da ora in poi, puoi trovare tutte le opzioni dei tuoi plugin nel menu YITH Plugins.\n"
+"Troverai le impostazioni di personalizzazione sotto una nuova voce nel menu YITH Plugins."
+
+#: plugin-fw/lib/yit-pointers.php:70
+msgid "Plugins Activated"
+msgstr "Plugin attivati"
+
+#: plugin-fw/lib/yit-plugin-subpanel.php:149
+msgid "If you continue with this action, you will reset all the options in this page."
+msgstr "Se prosegui con questa azione, tutte le opzioni di questa pagina saranno reimpostate."
+
+#: plugin-fw/lib/yit-plugin-panel.php:563
+msgid "Sorting successful."
+msgstr "Ordinamento effettuato con successo."
+
+#: plugin-fw/lib/yit-plugin-panel.php:562
+msgid "Sorry, import is disabled."
+msgstr "Ci dispiace, l'importazione è disabilitata."
+
+#: plugin-fw/lib/yit-plugin-panel.php:561
+msgid "The added file is not valid."
+msgstr "Il file aggiunto non è valido."
+
+#: plugin-fw/lib/yit-plugin-panel.php:560
+msgid "An error has occurred during import. Please try again."
+msgstr "Si è verificato un errore durante l'importazione. Prova di nuovo."
+
+#: plugin-fw/lib/yit-plugin-panel.php:559
+msgid "Database imported correctly."
+msgstr "Database importato correttamente."
+
+#: plugin-fw/lib/yit-plugin-panel.php:557
+#: plugin-fw/lib/yit-plugin-panel.php:558
+msgid "Element updated correctly."
+msgstr "Elemento aggiornato correttamente."
+
+#: plugin-fw/lib/yit-plugin-panel.php:556
+msgid "Element deleted correctly."
+msgstr "Elemento rimosso correttamente."
+
+#: plugin-fw/lib/yit-plugin-panel.php:555
+msgid "Settings reset"
+msgstr "Impostazioni azzerate"
+
+#: plugin-fw/lib/yit-plugin-panel.php:554
+msgid "Settings saved"
+msgstr "Impostazioni salvate"
+
+#: plugin-fw/lib/yit-plugin-panel.php:553
+msgid "The element you have entered already exists. Please, enter another name."
+msgstr "L'elemento inserito esiste già. Per favore, inserisci un altro nome."
+
+#: plugin-fw/lib/yit-plugin-panel.php:357
+#: plugin-fw/lib/yit-plugin-subpanel.php:151
+#: plugin-fw/templates/panel/woocommerce/woocommerce-form.php:19
+msgid "Are you sure?"
+msgstr "Sei sicuro?"
+
+#: plugin-fw/lib/yit-plugin-panel.php:357
+#: plugin-fw/lib/yit-plugin-subpanel.php:151
+msgid "Reset to default"
+msgstr "Ripristina configurazione predefinita"
+
+#: plugin-fw/lib/yit-plugin-panel.php:355
+#: plugin-fw/templates/panel/woocommerce/woocommerce-form.php:15
+msgid "If you continue with this action, you will reset all options in this page."
+msgstr "Se prosegui con questa azione, tutte le opzioni di questa pagina saranno reimpostate."
+
+#: plugin-fw/lib/yit-plugin-panel.php:352
+#: plugin-fw/lib/yit-plugin-subpanel.php:146
+#: plugin-fw/templates/panel/woocommerce/woocommerce-form.php:12
+msgid "Save Changes"
+msgstr "Salva modifiche"
+
+#: plugin-fw/lib/yit-plugin-panel.php:73
+msgid "Plugin Settings"
+msgstr "Impostazioni plugin"
+
+#: plugin-fw/lib/yit-plugin-panel-wc.php:374
+msgid "The changes you have made will be lost if you leave this page."
+msgstr "Perderai tutti i cambiamenti effettuati se lasci questa pagina."
+
+#: plugin-fw/lib/yit-cpt-unlimited.php:1633
+msgid "Upload multiple files"
+msgstr "Carica file multipli"
+
+#: plugin-fw/lib/yit-cpt-unlimited.php:1631
+msgid "Add %s from images"
+msgstr "Aggiungi %s dalla immagini"
+
+#: plugin-fw/lib/yit-cpt-unlimited.php:1482
+#: plugin-fw/templates/metaboxes/types/customtabs.php:46
+#: plugin-fw/templates/metaboxes/types/customtabs.php:90
+msgid "Name"
+msgstr "Nome"
+
+#: plugin-fw/lib/yit-cpt-unlimited.php:1475
+msgid "Show frontend of the %s"
+msgstr "Mostra front end di %s"
+
+#: plugin-fw/lib/yit-cpt-unlimited.php:1222
+#: plugin-fw/lib/yit-cpt-unlimited.php:1235
+msgid "Quick links"
+msgstr "Link rapidi"
+
+#: plugin-fw/lib/yit-cpt-unlimited.php:1130
+msgid "layout settings"
+msgstr "impostazioni di layout"
+
+#: plugin-fw/lib/yit-cpt-unlimited.php:1089
+msgid "Layout for single page of this portfolio"
+msgstr "Layout per pagina singola per questo portfolio"
+
+#: plugin-fw/lib/yit-cpt-unlimited.php:1088
+msgid "Single layout"
+msgstr "Layout singolo"
+
+#: plugin-fw/lib/yit-cpt-unlimited.php:1083
+msgid "Set univocal name for each category page URL."
+msgstr "Imposta un nome univoco per l'URL della pagina di ciascuna categoria."
+
+#: plugin-fw/lib/yit-cpt-unlimited.php:1082
+msgid "Taxonomy Rewrite"
+msgstr "Riscrivi tassonomia"
+
+#: plugin-fw/lib/yit-cpt-unlimited.php:1077
+msgid "If you want to use categories in the portfolio, set a name for taxonomy. Name should be a slug (must not contain capital letters nor spaces) and must not be more than 32 characters long (database structure restriction)."
+msgstr "Se vuoi aggiungere delle categorie nel portfolio, imposta un nome per la tassonomia. Il nome dovrà essere in forma di slug (non deve contenere caratteri maiuscoli né spazi) e non più lungo di 32 caratteri (restrizione di database)."
+
+#: plugin-fw/lib/yit-cpt-unlimited.php:1076
+msgid "Taxonomy"
+msgstr "Tassonomia"
+
+#: plugin-fw/lib/yit-cpt-unlimited.php:1071
+msgid "Set a label in plural (title of portfolio if empty)"
+msgstr "Imposta un'etichetta plurale (titolo del portfolio se vuoto)"
+
+#: plugin-fw/lib/yit-cpt-unlimited.php:1070
+msgid "Label in Plural"
+msgstr "Etichetta plurale"
+
+#: plugin-fw/lib/yit-cpt-unlimited.php:1065
+msgid "Set a label in singular (title of portfolio if empty)"
+msgstr "Imposta un'etichetta singolare (titolo del portfolio se vuoto)"
+
+#: plugin-fw/lib/yit-cpt-unlimited.php:1064
+msgid "Label in Singular"
+msgstr "Etichetta singolare"
+
+#: plugin-fw/lib/yit-cpt-unlimited.php:1059
+msgid "Univocal identification name in the URL for each product (slug from post if empty)"
+msgstr "Nome identificativo univoco nell'URL per singolo prodotto (usa slug dal post se vuoto)"
+
+#: plugin-fw/lib/yit-cpt-unlimited.php:1058
+msgid "Rewrite"
+msgstr "Riscrivi"
+
+#: plugin-fw/lib/yit-cpt-unlimited.php:1052
+msgid "Layout for this %s"
+msgstr "Layout per questo %s"
+
+#: plugin-fw/lib/yit-cpt-unlimited.php:1051
+msgid "Type"
+msgstr "Tipologia"
+
+#: plugin-fw/lib/yit-cpt-unlimited.php:1042
+msgid "%s Settings"
+msgstr "Impostazioni %s"
+
+#: plugin-fw/lib/yit-cpt-unlimited.php:724
+msgid "Categories"
+msgstr "Categorie"
+
+#: plugin-fw/lib/yit-cpt-unlimited.php:635
+msgid "Category"
+msgstr "Categoria"
+
+#: plugin-fw/lib/yit-cpt-unlimited.php:634
+msgid "New Category Name"
+msgstr "Nuovo nome categoria"
+
+#: plugin-fw/lib/yit-cpt-unlimited.php:633
+msgid "Add New Category"
+msgstr "Aggiungi nuova categoria"
+
+#: plugin-fw/lib/yit-cpt-unlimited.php:632
+msgid "Update Category"
+msgstr "Aggiorna categoria"
+
+#: plugin-fw/lib/yit-cpt-unlimited.php:631
+msgid "Edit Category"
+msgstr "Modifica categoria"
+
+#: plugin-fw/lib/yit-cpt-unlimited.php:630
+msgid "Parent Category:"
+msgstr "Categoria genitore:"
+
+#: plugin-fw/lib/yit-cpt-unlimited.php:629
+msgid "Parent Category"
+msgstr "Categoria genitore"
+
+#: plugin-fw/lib/yit-cpt-unlimited.php:628
+msgid "All Categories"
+msgstr "Tutte le categorie"
+
+#: plugin-fw/lib/yit-cpt-unlimited.php:627
+msgid "Search Categories"
+msgstr "Cerca categorie"
+
+#: plugin-fw/lib/yit-cpt-unlimited.php:626
+msgctxt "taxonomy singular name"
+msgid "Category"
+msgstr "Categoria"
+
+#: plugin-fw/lib/yit-cpt-unlimited.php:625
+msgctxt "taxonomy general name"
+msgid "%s Categories"
+msgstr "%s Categorie"
+
+#: plugin-fw/lib/yit-cpt-unlimited.php:468
+#: plugin-fw/lib/yit-cpt-unlimited.php:582
+msgid "No %s found in Trash"
+msgstr "Nessun %s trovato nel cestino"
+
+#: plugin-fw/lib/yit-cpt-unlimited.php:467
+#: plugin-fw/lib/yit-cpt-unlimited.php:581
+msgid "No %s found"
+msgstr "Nessun %s trovato"
+
+#: plugin-fw/lib/yit-cpt-unlimited.php:466
+#: plugin-fw/lib/yit-cpt-unlimited.php:580
+msgid "Search %s"
+msgstr "Cerca %s"
+
+#: plugin-fw/lib/yit-cpt-unlimited.php:465
+#: plugin-fw/lib/yit-cpt-unlimited.php:579
+#: plugin-fw/lib/yit-cpt-unlimited.php:1251
+#: plugin-fw/lib/yit-cpt-unlimited.php:1305
+msgid "View %s"
+msgstr "Visualizza %s"
+
+#: plugin-fw/lib/yit-cpt-unlimited.php:464
+#: plugin-fw/lib/yit-cpt-unlimited.php:578
+msgid "All %s"
+msgstr "Tutti %s"
+
+#: plugin-fw/lib/yit-cpt-unlimited.php:463
+#: plugin-fw/lib/yit-cpt-unlimited.php:577
+msgid "New %s"
+msgstr "Nuovo %s"
+
+#: plugin-fw/lib/yit-cpt-unlimited.php:462
+#: plugin-fw/lib/yit-cpt-unlimited.php:576
+#: plugin-fw/lib/yit-cpt-unlimited.php:1267
+#: plugin-fw/lib/yit-cpt-unlimited.php:1304
+msgid "Edit %s"
+msgstr "Modifica %s"
+
+#: plugin-fw/lib/yit-cpt-unlimited.php:461
+#: plugin-fw/lib/yit-cpt-unlimited.php:575
+msgid "Add New %s"
+msgstr "Aggiungi nuovo %s"
+
+#: plugin-fw/lib/yit-cpt-unlimited.php:460
+#: plugin-fw/lib/yit-cpt-unlimited.php:574
+#: plugin-fw/lib/yit-cpt-unlimited.php:719
+#: plugin-fw/lib/yit-cpt-unlimited.php:1632
+msgid "Add %s"
+msgstr "Aggiungi %s"
+
+#: init.php:67 init.php:136
+msgid "YITH WooCommerce Subscription is enabled but not effective. It requires WooCommerce in order to work."
+msgstr "YITH WooCommerce Subscription è abilitato ma non in funzione. Devi aver installato WooCommerce perché questo possa funzionare correttamente."
+
+#: init.php:45
+msgid "You can't activate the free version of YITH WooCommerce Subscription while you are using the premium one."
+msgstr "Non puoi attivare la versione gratuita di YITH WooCommerce Subscription se stai già utilizzando la versione premium."
+
+#: includes/gateways/paypal/class.yith-wc-subscription-paypal.php:328
+msgid "YSBS - IPN subscription cancelled for the order."
+msgstr "YSBS - abbonamento IPN annullato per questo ordine."
+
+#: includes/gateways/paypal/class.yith-wc-subscription-paypal.php:274
+#: includes/gateways/paypal/class.yith-wc-subscription-paypal.php:284
+msgid "IPN subscription payment completed."
+msgstr "Il pagamento per l'abbonamento IPN è stato completato."
+
+#: includes/gateways/paypal/class.yith-wc-subscription-paypal.php:241
+msgid "IPN subscription started"
+msgstr "Abbonamento IPN iniziato"
+
+#: includes/gateways/paypal/class.yith-wc-subscription-paypal.php:150
+msgid "Order %s"
+msgstr "Ordine %s"
+
+#: includes/functions.yith-wc-subscription.php:171
+#: includes/functions.yith-wc-subscription.php:254
+msgid "month"
+msgid_plural "months"
+msgstr[0] "mese"
+msgstr[1] "mesi"
+
+#: includes/functions.yith-wc-subscription.php:168
+#: includes/functions.yith-wc-subscription.php:251
+msgid "week"
+msgid_plural "weeks"
+msgstr[0] "settimana"
+msgstr[1] "settimane"
+
+#: includes/functions.yith-wc-subscription.php:165
+#: includes/functions.yith-wc-subscription.php:248
+msgid "day"
+msgid_plural "days"
+msgstr[0] "giorno"
+msgstr[1] "giorni"
+
+#: includes/functions.yith-wc-subscription.php:28
+msgid "months"
+msgstr "mesi"
+
+#: includes/functions.yith-wc-subscription.php:27
+msgid "days"
+msgstr "giorni"
+
+#: includes/class.ywsbs-susbscription.php:146
+msgid "Subscription Description"
+msgstr "Descrizione abbonamento"
+
+#: includes/class.ywsbs-susbscription.php:145
+msgid "ywsbs_subscription"
+msgstr "ywsbs_subscription"
+
+#: includes/class.ywsbs-susbscription.php:141
+msgid "Not found in Trash"
+msgstr "Non trovato nel cestino"
+
+#: includes/class.ywsbs-susbscription.php:140
+msgid "Not found"
+msgstr "Non trovato"
+
+#: includes/class.ywsbs-susbscription.php:139
+msgid "Search Subscription"
+msgstr "Cerca abbonamento"
+
+#: includes/class.ywsbs-susbscription.php:138
+msgid "Update Subscription"
+msgstr "Aggiorna abbonamento"
+
+#: includes/class.ywsbs-susbscription.php:137
+msgid "Edit Subscription"
+msgstr "Modifica abbonamento"
+
+#: includes/class.ywsbs-susbscription.php:135
+#: includes/class.ywsbs-susbscription.php:136
+msgid "Add New Subscription"
+msgstr "Aggiungi nuovo abbonamento"
+
+#: includes/class.ywsbs-susbscription.php:134
+msgid "View Subscriptions"
+msgstr "Visualizza abbonamenti"
+
+#: includes/class.ywsbs-susbscription.php:133
+msgid "All Subscriptions"
+msgstr "Tutti gli abbonamenti"
+
+#: includes/class.ywsbs-susbscription.php:132
+msgid "Parent Item:"
+msgstr "Articolo genitore:"
+
+#: includes/class.ywsbs-susbscription.php:130
+msgctxt "Post Type Singular Name"
+msgid "Subscription"
+msgstr "Abbonamento"
+
+#: includes/class.ywsbs-susbscription.php:129
+msgctxt "Post Type General Name"
+msgid "Subscriptions"
+msgstr "Abbonamenti"
+
+#: includes/class.yith-wc-subscription.php:171
+msgid "A subscription has been removed from your cart. You cannot purchases different subscriptions at the same time."
+msgstr "Una sottoscrizione è stata rimossa dal carrello. Non è possibile acquistare diversi abbonamenti allo stesso tempo."
+
+#: includes/class.yith-wc-subscription-order.php:335
+msgid "This order has been created to renew the subscription #%d"
+msgstr "Questo ordine è stato creato per rinnovare l'abbonamento #%d"
+
+#: includes/class.yith-wc-subscription-order.php:301
+msgid "Error %d: unable to create the order. Please try again."
+msgstr "Errore %d: non è stato possibile creare l'ordine. Riprova di nuovo."
+
+#: includes/class.yith-wc-subscription-admin.php:345
+#: includes/class.yith-wc-subscription-admin.php:391
+msgid "Plugin Documentation"
+msgstr "Documentazione plugin"
+
+#: includes/class.yith-wc-subscription-admin.php:248
+#: includes/class.yith-wc-subscription-admin.php:319
+msgid "Premium Version"
+msgstr "Versione premium"
+
+#: includes/class.yith-wc-subscription-admin.php:247
+#: templates/admin/subscriptions-tab.php:2
+msgid "Subscriptions"
+msgstr "Abbonamenti"
+
+#: includes/class.yith-wc-subscription-admin.php:246
+#: includes/class.yith-wc-subscription-admin.php:317
+#: plugin-fw/lib/yit-cpt-unlimited.php:1048
+#: plugin-fw/lib/yit-cpt-unlimited.php:1196
+#: plugin-fw/lib/yit-cpt-unlimited.php:1202
+#: plugin-fw/lib/yit-plugin-panel.php:74
+msgid "Settings"
+msgstr "Impostazioni"
+
+#: includes/class.yith-wc-subscription-admin.php:149
+msgid "(Max: <span class=\"max-l\">%d</span>)"
+msgstr "(Massimo: <span class=\"max-l\">%d</span>)"
+
+#: includes/class.yith-wc-subscription-admin.php:147
+msgid "Leave it empty for unlimited subscription"
+msgstr "Lascia il campo vuoto per creare abbonamenti illimitati"
+
+#: includes/class.yith-wc-subscription-admin.php:146
+msgid "Max length:"
+msgstr "Lunghezza massima:"
+
+#: includes/class.yith-wc-subscription-admin.php:134
+msgid "Price is per"
+msgstr "Prezzo per"
+
+#: includes/class.yith-wc-subscription-admin.php:131
+msgid "Subscription Settings"
+msgstr "Impostazioni abbonamenti"
+
+#: includes/class.yith-wc-subscription-admin.php:107
+msgid "Create a subscription for this product"
+msgstr "Crea un piano di abbonamento per questo prodotto"
+
+#: includes/class.yith-wc-subscription-admin.php:106
+#: includes/class.yith-wc-subscription-admin.php:254
+#: includes/class.yith-wc-subscription-admin.php:255
+#: includes/class.ywsbs-susbscription.php:131
+msgid "Subscription"
+msgstr "Abbonamento"
+
+#: includes/admin/class.ywsbs-subscriptions-list-table.php:165
+#: plugin-fw/templates/metaboxes/types/image-gallery.php:45
+msgid "Delete"
+msgstr "Rimuovi"
+
+#: includes/admin/class.ywsbs-subscriptions-list-table.php:34
+#: plugin-fw/licence/templates/panel/activation/activation-panel.php:92
+#: plugin-fw/licence/templates/panel/activation/activation-panel.php:201
+msgid "Expires"
+msgstr "Scadenza"
+
+#: includes/admin/class.ywsbs-subscriptions-list-table.php:33
+msgid "User"
+msgstr "Utente"
+
+#: includes/admin/class.ywsbs-subscriptions-list-table.php:32
+msgid "Order"
+msgstr "Ordine"
+
+#: includes/admin/class.ywsbs-subscriptions-list-table.php:31
+msgid "Recurring"
+msgstr "Importo rata"
+
+#: includes/admin/class.ywsbs-subscriptions-list-table.php:30
+msgid "Product"
+msgstr "Prodotto"
+
+#: includes/admin/class.ywsbs-subscriptions-list-table.php:29
+msgid "Status"
+msgstr "Stato"
+
+#: includes/admin/class.ywsbs-subscriptions-list-table.php:28
+msgid "ID"
+msgstr "ID"
