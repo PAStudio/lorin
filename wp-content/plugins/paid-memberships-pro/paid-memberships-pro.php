@@ -3,7 +3,7 @@
 Plugin Name: Paid Memberships Pro
 Plugin URI: http://www.paidmembershipspro.com
 Description: Plugin to Handle Memberships
-Version: 1.8.12.1
+Version: 1.8.13.6
 Author: Stranger Studios
 Author URI: http://www.strangerstudios.com
 Text Domain: pmpro
@@ -15,7 +15,7 @@ Domain Path: /languages
 */
 
 //version constant
-define("PMPRO_VERSION", "1.8.12.1");
+define("PMPRO_VERSION", "1.8.13.6");
 define("PMPRO_USER_AGENT", "Paid Memberships Pro v" . PMPRO_VERSION . "; " . site_url());
 
 //if the session has been started yet, start it (ignore if running from command line)
@@ -69,7 +69,7 @@ require_once(PMPRO_DIR . "/includes/capabilities.php");			//manage PMPro capabil
 
 require_once(PMPRO_DIR . "/includes/xmlrpc.php");				//xmlrpc methods
 
-require_once(PMPRO_DIR . "/shortcodes/checkout_button.php");	//[checkout_button] shortcode to show link to checkout for a level
+require_once(PMPRO_DIR . "/shortcodes/checkout_button.php");	//[pmpro_checkout_button] shortcode to show link to checkout for a level
 require_once(PMPRO_DIR . "/shortcodes/membership.php");			//[membership] shortcode to hide/show member content
 require_once(PMPRO_DIR . "/shortcodes/pmpro_account.php");			//[pmpro_account] shortcode to show account information
 

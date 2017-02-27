@@ -1,9 +1,9 @@
 === Paid Memberships Pro ===
 Contributors: strangerstudios
 Tags: memberships, membership, authorize.net, ecommerce, paypal, stripe, braintree, restrict access, restrict content, directory site, payflow
-Requires at least: 3.5
-Tested up to: 4.6.1
-Stable tag: 1.8.12.1
+Requires at least: 4
+Tested up to: 4.7.2
+Stable tag: 1.8.13.6
 
 A revenue-generating machine for membership sites. Unlimited levels with recurring payment, protected content and member management.
 
@@ -115,6 +115,56 @@ Not sure? You can find out by doing a bit a research.
 [View All Screenshots](http://www.paidmembershipspro.com/features/screenshots/)
 
 == Changelog ==
+= 1.8.13.6 =
+* BUG: Fixed bug where credit card expiration emails would be sent to users with PayPal Express orders.
+* BUG: Fixed bug when updating billing with Stripe.
+* BUG: Fixed bug where the archive/search filter was not running for logged out users.
+* ENHANCEMENT: Updated Finnish translations. (Thanks, JP Jakonen)
+* ENHANCEMENT: Added filter for modifying the order description in Stripe. (Thanks, Rafe Colton)
+
+= 1.8.13.5 =
+* BUG: Fixed notifications.php to make sure it really only checks once per day. Also updated the URL checked to notifications.paidmembershipspro.com, which runs on its own server.
+
+= 1.8.13.4 =
+* BUG/ENHANCEMENT: Changed the pmpro_button shortcode to pmpro_checkout_button. (The old pmpro_button will also still work. checkout_button works if you have Register Helper installed.)
+
+= 1.8.13.3 =
+* BUG: Fixed bug when using a secondary gateway (e.g. PayPal Express) with Stripe as your primary gateway.
+
+= 1.8.13.2 =
+* BUG: Fixed bug with updating credit cards through Braintree.
+* BUG: Fixed bug with updating credit cards through Stripe.
+* BUG: Fixed SQL warnings when generating the pmpro_membership_levelmeta table. (Thanks, itibet on GitHub)
+* BUG/ENHANCEMENT: Moved some update billing and checkout related code from the preheaders and page templates into the Braintree and Stripe classes.
+* ENHANCEMENT: Added pmpro_billing_order filter that functions similar to pmpro_checkout_order. 
+* ENHANCEMENT: Added pmpro_billing_before_submit_button hook that functions similar to the pmpro_checkout_before_submit_button hook.
+* ENHANCEMENT: Clicking on a report widget no longer takes you to the details page. You have to click the details button. This allows us to add additional functionality to the widgets.
+* ENHANCEMENT: Updated reports widgets so the "details" button only shows if a page function is defined for that report. You can now have report widgets without details pages.
+* ENHANCEMENT: You can now click on a heading in the Membership Stats report widget to see data for up to 3 of your levels. The first 3 levels per the level ordering are shown.
+
+= 1.8.13.1 =
+* BUG: Fixed issue where end dates were being set/saved incorrectly from the edit user/profile page in the dashboard.
+* BUG: Fixed warnings in the Braintree PHP library. (Thanks, Travis Shivers)
+* BUG: Fixed issue where the filtered $mypost object was not being used in the content filter if the post type was "page". (Thanks, James)
+* BUG: Removed the extra class="input" attribute on the CVV field when the Stripe gateway is used. (Thanks, Rafe Colton)
+* BUG/ENHANCEMENT: Changed the number of X placeholders for masked credit cards to 12 (+ the last 4 stored) instead of 13. (Thanks, Rafe Colton)
+
+= 1.8.13 =
+* FEATURE: The Stripe Webhook has been updated to process subscriptions cancelled from Stripe. PMPro will now cancel memberships for these users instead of sending an email to the admin.
+* BUG: Fixed various bugs in the PayPal IPN handler.
+* BUG: Fixed search on discount codes page in dashboard. (Thanks, Debjit Saha)
+* BUG: Fixed bug in Cancellations report where all-time cancellations were always 0.
+* BUG: Fixed link to payment settings on checkout notice. (Thanks, Coen Jacobs)
+* BUG: Timezone magic on edit user page in the dashboard to make sure the expiration date you select is the one set.
+* BUG: Swapped out deprecated uses of eregi_replace and split.
+* BUG/ENHANCEMENT: Now using add_query_arg in the pmpro_url() function. (Thanks, Debjit Saha)
+* ENHANCEMENT: Updating stylesheet for WordPress 4.7 and new Twenty Seventeen theme support.
+* ENHANCEMENT: Now longer warning of membership levels with cycle numbers > 1 when using the Payflow Pro gateway since Payflow now supports cycle numbers (frequencies) > 1. 
+* ENHANCEMENT: Updated da_DK translation. (Thanks, bopdoq on GitHub)
+* ENHANCEMENT: Added pmpro_include_payment_option_for_paypal filter, which can be set to false to use PayPal WPP without the PayPal Express option.
+* ENHANCEMENT: Better dependency checking for Stripe and Braintree gateways.
+* ENHANCEMENT: Updated IPN handler and Stripe Webhook handler to use pmpro_cancelMembershipLevel instead of pmpro_changeMembershipLevele. This improves support for the MMPU addon.
+
 = 1.8.12.1 =
 * BUG: Fixed bug when using the testing gateway.
 * BUG: Avoiding issues where is_user_logged in is not yet available for the pmpro_search_filter() function. (Thanks, d_enajetic)

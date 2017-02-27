@@ -66,7 +66,7 @@ function pmpro_has_membership_access($post_id = NULL, $user_id = NULL, $return_m
 	else
 	{
 		//are any membership levels associated with this page?
-		$sqlQuery = "SELECT m.id, m.name FROM $wpdb->pmpro_memberships_pages mp LEFT JOIN $wpdb->pmpro_membership_levels m ON mp.membership_id = m.id WHERE mp.page_id = '" . $post_id . "'";
+		$sqlQuery = "SELECT m.id, m.name FROM $wpdb->pmpro_memberships_pages mp LEFT JOIN $wpdb->pmpro_membership_levels m ON mp.membership_id = m.id WHERE mp.page_id = '" . $mypost->ID . "'";
 	}
 
 
@@ -151,8 +151,7 @@ function pmpro_search_filter($query)
     }
 
     //hide member pages from non-members (make sure they aren't hidden from members)    
-	if(function_exists('is_user_logged_in') && is_user_logged_in() &&
-	   !$query->is_admin &&
+	if(!$query->is_admin &&
 	   !$query->is_singular && 
 	   empty($query->query['post_parent']) &&
 	   (
@@ -162,7 +161,10 @@ function pmpro_search_filter($query)
 	)
     {		
 		//get page ids that are in my levels
-        $levels = pmpro_getMembershipLevelsForUser($current_user->ID);
+        if(!empty($current_user->ID))
+			$levels = pmpro_getMembershipLevelsForUser($current_user->ID);
+		else
+			$levels = false;
         $my_pages = array();
 		$member_pages = array();
 

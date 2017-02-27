@@ -78,8 +78,8 @@ function pmpro_br2nl($text, $tags = "br")
 
 	foreach($tags as $tag)
 	{
-		$text = eregi_replace("<" . $tag . "[^>]*>", "\n", $text);
-		$text = eregi_replace("</" . $tag . "[^>]*>", "\n", $text);
+		$text = preg_replace("/<{$tag}[^>]*>/", "\n", $text);
+		$text = preg_replace("/<\/{$tag}[^>]*>/", "\n", $text);
 	}
 
 	return($text);
@@ -149,9 +149,9 @@ function pmpro_url($page = NULL, $querystring = "", $scheme = NULL)
 	}
 
 	//figure out querystring
-	if(strpos($url, "?"))
-		$querystring = str_replace("?", "&", $querystring);
-	$url .= $querystring;
+	$querystring = str_replace("?", "", $querystring);
+	parse_str( $querystring, $query_args );
+	$url = esc_url_raw( add_query_arg( $query_args, $url ) );
 
 	//figure out scheme
 	if(is_ssl())

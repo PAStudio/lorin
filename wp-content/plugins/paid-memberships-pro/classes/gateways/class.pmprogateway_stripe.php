@@ -28,11 +28,13 @@
 			$this->gateway = $gateway;
 			$this->gateway_environment = pmpro_getOption("gateway_environment");
 
-			$this->dependencies();
-
-			$this->loadStripeLibrary();
-			Stripe::setApiKey(pmpro_getOption("stripe_secretkey"));
-			Stripe::setAPIVersion("2015-07-13");
+			if($this->dependencies()) {
+				$this->loadStripeLibrary();
+				Stripe::setApiKey(pmpro_getOption("stripe_secretkey"));
+				Stripe::setAPIVersion("2015-07-13");
+			} else {
+				return false;
+			}
 			
 			return $this->gateway;
 		}
@@ -40,21 +42,30 @@
 		/**
 		 * Warn if required extensions aren't loaded.
 		 *
+		 * @return bool
 		 * @since 1.8.6.8.1
 		 */
-		public function dependencies()
+		public static function dependencies()
 		{
 			global $msg, $msgt, $pmpro_stripe_error;
 
-			$modules = array('curl');
+			$modules = array('curl', 'mbstring');
 
 			foreach($modules as $module){
 				if(!extension_loaded($module)){
-					$pmpro_stripe_error = true;
+					$pmpro_stripe_error = true;					
 					$msg = -1;
-					$msgt = sprintf(__("The %s gateway depends on the %s PHP extension. Please enable it, or ask your hosting provider to enable it", "pmpro"), $this->gateway, $module);
+					$msgt = sprintf(__("The %s gateway depends on the %s PHP extension. Please enable it, or ask your hosting provider to enable it.", "pmpro"), 'Stripe', $module);
+					
+					//throw error on checkout page
+					if(!is_admin())
+						pmpro_setMessage($msgt, 'pmpro_error');
+					
+					return false;
 				}
 			}
+			
+			return true;
 		}
 
 		/**
@@ -91,7 +102,8 @@
 			//old global RE showing billing address or not
 			global $pmpro_stripe_lite;
 			$pmpro_stripe_lite = apply_filters("pmpro_stripe_lite", !pmpro_getOption("stripe_billingaddress"));	//default is oposite of the stripe_billingaddress setting
-
+			add_filter('pmpro_required_billing_fields', array('PMProGateway_stripe', 'pmpro_required_billing_fields'));
+			
 			//updates cron
 			add_action('pmpro_cron_stripe_subscription_updates', array('PMProGateway_stripe', 'pmpro_cron_stripe_subscription_updates'));
 
@@ -111,7 +123,9 @@
 			if(($default_gateway == "stripe" || $current_gateway == "stripe") && empty($_REQUEST['review']))	//$_REQUEST['review'] means the PayPal Express review page
 			{
 				add_action('pmpro_checkout_preheader', array('PMProGateway_stripe', 'pmpro_checkout_preheader'));
+				add_action('pmpro_billing_preheader', array('PMProGateway_stripe', 'pmpro_checkout_preheader'));
 				add_filter('pmpro_checkout_order', array('PMProGateway_stripe', 'pmpro_checkout_order'));
+				add_filter('pmpro_billing_order', array('PMProGateway_stripe', 'pmpro_checkout_order'));
 				add_filter('pmpro_include_billing_address_fields', array('PMProGateway_stripe', 'pmpro_include_billing_address_fields'));
 				add_filter('pmpro_include_cardtype_field', array('PMProGateway_stripe', 'pmpro_include_billing_address_fields'));
 				add_filter('pmpro_include_payment_information_fields', array('PMProGateway_stripe', 'pmpro_include_payment_information_fields'));
@@ -254,11 +268,13 @@
 					var tokenNum = 0;
 
 					jQuery(document).ready(function() {
-						jQuery("#pmpro_form, .pmpro_form").submit(function(event) {
-
+						jQuery(".pmpro_form").submit(function(event) {
+						
+						// prevent the form from submitting with the default action
+						event.preventDefault();
+						
 						//double check in case a discount code made the level free
-						if(pmpro_require_billing)
-						{
+						if(pmpro_require_billing) {
 							//build array for creating token
 							var args = {
 								number: jQuery('#AccountNumber').val(),								
@@ -289,23 +305,28 @@
 								args['name'] = jQuery.trim(jQuery('#bfirstname').val() + ' ' + jQuery('#blastname').val());
 
 							//create token(s)
-							var levelnums = jQuery("#level").val().split(",");
-							for(var cnt = 0, len = levelnums.length; cnt < len; cnt++) {
+							if (jQuery('#level').length) {
+								var levelnums = jQuery("#level").val().split(",");
+								for(var cnt = 0, len = levelnums.length; cnt < len; cnt++) {
+									Stripe.createToken(args, stripeResponseHandler);
+								}
+							} else {
 								Stripe.createToken(args, stripeResponseHandler);
 							}
-
-							// prevent the form from submitting with the default action
+								
+							// prevent the form from submitting with the default action							
 							return false;
-						}
-						else
+						} else {
+							this.submit();
 							return true;	//not using Stripe anymore
+						}													
 						});
 					});
 
 					function stripeResponseHandler(status, response) {
 						if (response.error) {
 							// re-enable the submit button
-							jQuery('.pmpro_btn-submit-checkout').removeAttr("disabled");
+							jQuery('.pmpro_btn-submit-checkout,.pmpro_btn-submit').removeAttr("disabled");
 
 							//hide processing message
 							jQuery('#pmpro_processing_message').css('visibility', 'hidden');
@@ -327,8 +348,8 @@
 							if(jQuery('#CardType[name=CardType]').length)
 								jQuery('#CardType').val(response['card']['brand']);
 							else
-								form$.append("<input type='hidden' name='CardType' value='" + response['card']['brand'] + "'/>");
-							form$.append("<input type='hidden' name='AccountNumber' value='XXXXXXXXXXXXX" + response['card']['last4'] + "'/>");
+								form$.append("<input type='hidden' name='CardType' value='" + response['card']['brand'] + "'/>");							
+							form$.append("<input type='hidden' name='AccountNumber' value='XXXXXXXXXXXX" + response['card']['last4'] + "'/>");
 							form$.append("<input type='hidden' name='ExpirationMonth' value='" + ("0" + response['card']['exp_month']).slice(-2) + "'/>");
 							form$.append("<input type='hidden' name='ExpirationYear' value='" + response['card']['exp_year'] + "'/>");
 
@@ -350,6 +371,35 @@
 				}
 				add_filter("pmpro_required_billing_fields", "pmpro_stripe_dont_require_CVV");
 			}
+		}
+		
+		/**
+		 * Don't require the CVV.
+		 * Don't require address fields if they are set to hide.
+		 */
+		static function pmpro_required_billing_fields($fields)
+		{
+			global $pmpro_stripe_lite, $current_user, $bemail, $bconfirmemail;			
+			
+			//CVV is not required if set that way at Stripe. The Stripe JS will require it if it is required.
+			unset($fields['CVV']);	
+			
+			//if using stripe lite, remove some fields from the required array			
+			if ($pmpro_stripe_lite) {
+				//some fields to remove
+				$remove = array('bfirstname', 'blastname', 'baddress1', 'bcity', 'bstate', 'bzipcode', 'bphone', 'bcountry', 'CardType');
+				//if a user is logged in, don't require bemail either
+				if (!empty($current_user->user_email)) {
+					$remove[] = 'bemail';
+					$bemail = $current_user->user_email;
+					$bconfirmemail = $bemail;
+				}
+				//remove the fields
+				foreach ($remove as $field)
+					unset($fields[$field]);
+			}
+			
+			return $fields;
 		}
 
 		/**
@@ -551,7 +601,7 @@
 						?>
 						<div class="pmpro_payment-cvv">
 							<label for="CVV"><?php _e('CVV', 'pmpro');?></label>
-							<input class="input" id="CVV" type="text" size="4" value="<?php if(!empty($_REQUEST['CVV'])) { echo esc_attr($_REQUEST['CVV']); }?>" class=" <?php echo pmpro_getClassForField("CVV");?>" />  <small>(<a href="javascript:void(0);" onclick="javascript:window.open('<?php echo pmpro_https_filter(PMPRO_URL)?>/pages/popup-cvv.html','cvv','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=600, height=475');"><?php _e("what's this?", 'pmpro');?></a>)</small>
+							<input id="CVV" type="text" size="4" value="<?php if(!empty($_REQUEST['CVV'])) { echo esc_attr($_REQUEST['CVV']); }?>" class="input <?php echo pmpro_getClassForField("CVV");?>" />  <small>(<a href="javascript:void(0);" onclick="javascript:window.open('<?php echo pmpro_https_filter(PMPRO_URL)?>/pages/popup-cvv.html','cvv','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=600, height=475');"><?php _e("what's this?", 'pmpro');?></a>)</small>
 						</div>
 						<?php
 							}
@@ -1139,7 +1189,7 @@
 				  "amount" => $amount * $currency_unit_multiplier, # amount in cents, again
 				  "currency" => strtolower($pmpro_currency),
 				  "customer" => $this->customer->id,
-				  "description" => "Order #" . $order->code . ", " . trim($order->FirstName . " " . $order->LastName) . " (" . $order->Email . ")"
+				  "description" => apply_filters('pmpro_stripe_order_description', "Order #" . $order->code . ", " . trim($order->FirstName . " " . $order->LastName) . " (" . $order->Email . ")", $order)
 				  )
 				);
 			}

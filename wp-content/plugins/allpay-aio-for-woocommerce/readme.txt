@@ -7,23 +7,24 @@ Stable tag: 1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Allpay AIO for WooCommerce allows you to accept payment on your Woocommerce store via Allpay payment gateway in Taiwan.
+Allpay/ECpay AIO for WooCommerce allows you to accept payment on your Woocommerce store via Allpay payment gateway in Taiwan.
 
 == Description ==
-= WooCommerce歐付寶全方位金流外掛 =
+= WooCommerce歐付寶/綠界全方位金流外掛 =
 WooCommerce與在台灣最具規模的歐付寶第三方付款金流，只要一個外掛就輕鬆搞定! 豐富的設定選項、詳盡的資訊流程，讓您使用第三方收付更加的方便!
 
 = 外掛特色 =
+* __支援綠界__ 您可選擇使用歐付寶金流或綠界金流收款
 * __免去繁複的安裝多個外掛，只要一個外掛就搞定!__ 支援信用卡、網路ATM、ATM自動櫃員機、超商代碼、超商條碼、支付寶、財付通、儲值消費、全家條碼立即儲
 * __自訂指示訊息__ 無論是已付款或未付款，您都可以自訂想要給顧客觀看的訊息，讓顧客了解您想要傳達的訊息，溝通沒煩惱!
 * __商家電子郵件通知__ 顧客在下單後所送出的通知郵件，可顯示已付款或是未付款訊息
 * __顧客電子郵件通知__ 顧客的電子郵件通知，可帶有ATM、超商代碼繳款訊息，方便顧客儲存紀錄，只要手機在手就可輕鬆付款
-* __顯示歐付寶訂單資訊__ 在訂單資訊頁讓您了解顧客以歐付寶下單後的基本資訊
+* __顯示訂單資訊__ 在訂單資訊頁讓您了解顧客在金流下單後的基本資訊
 * __顧客下單完可觀看訂單資訊__ 顧客下單完後，可在到商店頁面看到當前的付款資訊，在成功付款後可即時顯示付款狀態，顧客大可不必再跟商家確認是否收到付款
-* __詳細的訂單紀錄__ 與歐付寶來往的訊息皆會被紀錄下來，讓您了解當前訂單情形
-* __即時顯示訂單資訊__ 無論是時間、金額、已付款、未付款，您可以即時了解歐付寶當前訂單狀態，不需到歐付寶商家後台查詢訂單
+* __詳細的訂單紀錄__ 與金流來往的訊息皆會被紀錄下來，讓您了解當前訂單情形
+* __即時顯示訂單資訊__ 無論是時間、金額、已付款、未付款，您可以即時了解金流當前訂單狀態，不需到商家後台查詢訂單
 * __可設定最低付款金額__ 擔心付款方式會增加成本嗎? 可設定最低付款金額，讓您增加整體收益
-* __自動更新付款方式標題__ 有別於只顯示歐付寶全方位金流主標題，您可以選擇是否要更新顧客所選擇的歐付寶細項標題，讓您了解更詳細的付款方式
+* __自動更新付款方式標題__ 有別於只顯示金流主標題，您可以選擇是否要更新顧客所選擇的付款方式細項標題，讓您了解更詳細的付款方式
 * __自動取消訂單__ ATM付款、超商條碼、超商代收之訂單如果在期限內尚未付款，訂單自動取消，讓您不必煩惱是否需要時常檢查訂單期限
 * __自訂繳費期限__ 可讓您找到跟顧客之間收付期限的平衡點
 * __排除付款方式__ 您可設定需要排除哪些付款方式，讓您的收款方式更加簡單
@@ -49,7 +50,7 @@ WooCommerce 2.2 以上
 *	按下"確定"來繼續安裝外掛，如果成功的話會顯示成功訊息，如果有問題的話也會通知您
 *	如果成功安裝，按下"啟用"來啟用外掛
 * 	到 WooCommerce->設定->結帳
-* 	按下子設定頁 "歐付寶全方位金流"
+* 	按下子設定頁 "歐付寶/綠界全方位金流"
 *	開始進行設定
 
 = Manual Installation =
@@ -58,17 +59,22 @@ WooCommerce 2.2 以上
 3.  按下上傳，然後選擇要上傳的壓縮檔案，按下 OK 然後 立即安裝
 4.  啟用外掛
 5. 	到 WooCommerce->設定->結帳
-6. 	按下子設定頁 "歐付寶全方位金流"
+6. 	按下子設定頁 "歐付寶/綠界全方位金流"
 7.	開始進行設定
 
 == Frequently Asked Questions ==
 = 測試說明 =
 
 = 設定測試商家 =
-到WooCommerce->設定->結帳->歐付寶全方位金流，填入測試的**商店代號、HashKey、HashIV**,
+到WooCommerce->設定->結帳->歐付寶/綠界全方位金流，填入測試的**商店代號、HashKey、HashIV**,
 
 = 歐付寶測試後台 =
 http://vendor-stage.allpay.com.tw/
+帳號 StageTest
+密碼 test1234
+
+= 綠界測試後台 =
+http://vendor-stage.ecpay.com.tw/
 帳號 StageTest
 密碼 test1234
 
@@ -77,7 +83,7 @@ http://vendor-stage.allpay.com.tw/
 信用卡測試安全碼 222 
 信用卡測試有效年月: 請設定大於測試時間。假如您的測試時間在 2013 年 11 月 26 號，該筆交易的信用卡有效年月請設定 2013 年 11 月以後，因為系統會判斷有效年月是否已過期，已過期則會回應刷卡失敗。
 
-更多詳細金流資訊請至[歐付寶](https://www.allpay.com.tw/)查詢
+更多詳細金流資訊請至 [歐付寶](https://www.allpay.com.tw/) 或 [綠界](https://www.ecpay.com.tw/) 查詢
 
 = WebATM測試 =
 請選擇台新銀行，有模擬付款
@@ -101,3 +107,12 @@ v1.0.4
 add - reduce order stock timing
 add - support allpay aio English language
 add - new filter 'inno_allpay_get_payment_type_args'
+
+v1.1
+add - support for ECpay
+update - new coding structure
+add filter - innovext_allpay_cancel_order_message
+add hook - innovext_allpay_before_process_rtn_code
+
+v1.1.1
+fixed - missing ECpay logo
