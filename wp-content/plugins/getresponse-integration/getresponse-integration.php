@@ -4,7 +4,7 @@
  * Plugin Name: GetResponse Integration Plugin
  * Plugin URI: http://wordpress.org/extend/plugins/getresponse-integration/
  * Description: This plug-in enables installation of a GetResponse fully customizable sign up form on your WordPress site or blog. Once a web form is created and added to the site the visitors are automatically added to your GetResponse contact list and sent a confirmation email. The plug-in additionally offers sign-up upon leaving a comment.
- * Version: 3.1.1
+ * Version: 3.1.3
  * Author: GetResponse
  * Author URI: http://getresponse.com/
  * Author: Grzegorz Struczynski
@@ -25,6 +25,8 @@
  */
 class Gr_Integration
 {
+	const CUSTOM_TYPE = 'wordpress';
+
 	/**
 	 * Db Prefix
 	 **/
@@ -480,7 +482,7 @@ class Gr_Integration
 				?>
 				<div id="message" class="error " style="margin: 2px; 0px; 0px;">
 					<p>
-						<strong><?php _e('Settings error', 'Gr_Integration'); ?></strong> <?php _e(' - Invalid API Key', 'Gr_Integration') ?>
+						<strong><?php _e('Settings error', 'Gr_Integration'); ?></strong> <?php if(!empty($api->error)) { echo $api->error; } else  { _e(' - Invalid API Key', 'Gr_Integration'); } ?>
 					</p>
 				</div>
 				<?php
@@ -1777,6 +1779,8 @@ class Gr_Integration
 	 */
 	public function addContact($campaign, $name, $email, $cycle_day = 0, $user_customs = array())
 	{
+		$user_customs['origin'] = self::CUSTOM_TYPE;
+
 		$params = array(
 			'name'       => $name,
 			'email'      => $email,

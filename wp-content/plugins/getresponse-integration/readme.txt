@@ -2,8 +2,8 @@
 Contributors: GetResponse
 Tags: getresponse, getresponse360, email, newsletter, signup, marketing, plugin, widget, mailing list, subscriber, contacts, subscribe form, woocommerce, buddypress
 Requires at least: 3.3.0
-Tested up to: 4.6
-Stable tag: 3.1.1
+Tested up to: 4.7.2
+Stable tag: 3.1.3
 
 Take advantage of your visitors' commentators' and customers' interest. Invite them to subscribe and nurture their engagement.
 

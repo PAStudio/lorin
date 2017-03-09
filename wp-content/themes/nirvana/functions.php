@@ -1,6 +1,6 @@
 <?php
-update_option( 'siteurl', 'http://lodrorinchen.org' );
-update_option( 'home', 'http://lodrorinchen.org' );
+update_option( 'siteurl', 'https://lodrorinchen.org' );
+update_option( 'home', 'https://lodrorinchen.org' );
 /*
  * Functions file
  * Calls all other required files
@@ -119,10 +119,11 @@ add_action( 'wp_login', 'expire_pmp_membership', 10, 2 );
 /**
  * Custom: keep members logged in for 1 hour in case their memberships expire.
  */
-function keep_member_logged_in_for_1_hour( $expirein ) {
+/*function keep_member_logged_in_for_1_hour( $expirein ) {
 	return 3600; // 1 hour in seconds, 60 * 60
 }
 add_filter( 'auth_cookie_expiration', 'keep_member_logged_in_for_1_hour' );
+*/
 
 /**
  * Custom: Add pmp membership "Not-Yet-Paid" to new-registered user
@@ -130,4 +131,4 @@ add_filter( 'auth_cookie_expiration', 'keep_member_logged_in_for_1_hour' );
 function default_pmp_member_level( $user_id ) {
 	pmpro_changeMembershipLevel(9, $user_id);
 }
-add_action( 'user_register', default_pmp_member_level );
+add_action( 'user_register', 'default_pmp_member_level' );

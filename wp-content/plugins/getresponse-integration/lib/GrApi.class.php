@@ -12,6 +12,7 @@ class GetResponseIntegration {
 	private $domain = null; // for GetResponse 360
 	private $timeout = 8;
 	public $http_status;
+	public $error;
 
 	/**
 	 * Set api key and optionally API endpoint
@@ -266,22 +267,15 @@ class GetResponseIntegration {
 		$curl = curl_init();
 		curl_setopt_array($curl, $options);
 
-		$response = json_decode(curl_exec($curl));
+		$curlExec = curl_exec($curl);
 
-		$error = curl_errno($curl);
-		// CURLE_SSL_CACERT error
-		if (isset($error) && $error == 60 && !file_exists($certFile))
-		{
-			$cert = @file_get_contents('https://curl.haxx.se/ca/cacert.pem');
-			$fp = fopen($certFile,"wb");
-			if ($fp) {
-				fwrite($fp, $cert);
-				fclose($fp);
-				self::call($api_method, $http_method, $params);
-			}
-		}
+		if (false === $curlExec) {
+            $this->error = curl_error($curl);
+            return null;
+        }
 
-		$this->http_status = curl_getinfo($curl, CURLINFO_HTTP_CODE);
+        $response = json_decode($curlExec);
+        $this->http_status = curl_getinfo($curl, CURLINFO_HTTP_CODE);
 
 		curl_close($curl);
 		return (object)$response;
