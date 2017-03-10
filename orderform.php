@@ -33,36 +33,30 @@ $shopKey = "VdhbCRuuN4EUqKGrcmS7uR3In7zofcgb";
 $shopIV = "qyn3pRxcVc6mWNN8";
 $postData = array(
 	"RespondType" => "JSON",
-	"TimeStamp" => (string)time(),
+	"TimeStamp" => time(),
 	"Version" => "1.0",
 	"MerOrderNo" => $shopMerID . time(),
-	"ProdDesc" => "當月會員",
-	"PeriodAmt" => 499,
+	// "ProdDesc" => _e( 'Product', 'woocommerce' ),
+	// "PeriodAmt" => _e( 'Total', 'woocommerce' ),
 	"PeriodType" => "M",
-	"PeriodPoint" => "01",
+	"PeriodPoint" => date("d"),
 	"PeriodStartType" => 2,
 	"PeriodTimes" => "12",
-	"ReturnURL" => "facebook.com",
-	"PeriodMemo" => "123",
+	// "ReturnURL" => "facebook.com",
+	"PeriodMemo" => "",
 	"PayerEmail" => "seanchen47@gmail.com",
-	"EmailModify" => 1,
+	// "EmailModify" => "",	default enabled
 	"PaymentInfo" => "N",
 	"OrderInfo" => "N",
-	"NotifyURL" => "facebook.com",
-	"BackURL" => "facebook.com"
+	// "NotifyURL" => "",	default disabled
+	"BackURL" => "lodrorinchen.org/shop"
 );
 
 ?>
 
 <form action='https://core.spgateway.com/MPG/period' method='POST'>
-<input type='text' name='MerchantID_' value='<?php echo $shopMerID; ?>'>
-<input type='text' name='PostData_' value='<?php echo encrypt($shopKey, $shopIV, http_build_query($postData)); ?>'>
-<input type='submit' value='go'>
+<input type='hidden' name='MerchantID_' value='<?php echo $shopMerID; ?>'>
+<input type='hidden' name='PostData_' value='<?php echo encrypt($shopKey, $shopIV, http_build_query($postData)); ?>'>
+<input type='submit' value='一年訂閱'>
 </form>
-
-<?php
-
-echo decrypt($shopKey, $shopIV, encrypt($shopKey, $shopIV, http_build_query($postData)));
-
-?>
 
