@@ -1,0 +1,531 @@
+03-15-2017 @ 16:54:09 - Generating payment form for order #WC1274. Notify URL: https://lodrorinchen.org/wc-api/WC_innovext_allpay_aio/
+03-15-2017 @ 16:54:09 - Item Name : 當季會員 x 1#當週會員 x 1
+03-15-2017 @ 16:54:09 - POST to Allpay Args : 
+Array
+(
+    [MerchantID] => 1591497
+    [MerchantTradeNo] => WC1274
+    [MerchantTradeDate] => 2017/03/15 16:54:09
+    [PaymentType] => aio
+    [TotalAmount] => 1396
+    [TradeDesc] => 羅卓仁謙
+    [ItemName] => 當季會員 x 1#當週會員 x 1
+    [ChoosePayment] => ALL
+    [ReturnURL] => https://lodrorinchen.org/wc-api/WC_innovext_allpay_aio/
+    [PaymentInfoURL] => https://lodrorinchen.org/wc-api/WC_innovext_allpay_aio/
+    [ClientBackURL] => https://lodrorinchen.org/checkout/order-received/1274?key=wc_order_58c901309f953
+    [OrderResultURL] => https://lodrorinchen.org/checkout/order-received/1274?key=wc_order_58c901309f953
+    [ExpireDate] => 5
+    [CheckMacValue] => AC8A3DD571869B2E976C7DC53B0BFF52
+)
+
+03-16-2017 @ 00:01:43 - Generating payment form for order #WC1275. Notify URL: https://lodrorinchen.org/wc-api/WC_innovext_allpay_aio/
+03-16-2017 @ 00:01:43 - Item Name : 當季會員 x 1
+03-16-2017 @ 00:01:43 - POST to Allpay Args : 
+Array
+(
+    [MerchantID] => 1591497
+    [MerchantTradeNo] => WC1275
+    [MerchantTradeDate] => 2017/03/16 00:01:43
+    [PaymentType] => aio
+    [TotalAmount] => 1197
+    [TradeDesc] => 羅卓仁謙
+    [ItemName] => 當季會員 x 1
+    [ChoosePayment] => ALL
+    [ReturnURL] => https://lodrorinchen.org/wc-api/WC_innovext_allpay_aio/
+    [PaymentInfoURL] => https://lodrorinchen.org/wc-api/WC_innovext_allpay_aio/
+    [ClientBackURL] => https://lodrorinchen.org/checkout/order-received/1275?key=wc_order_58c965667351e
+    [OrderResultURL] => https://lodrorinchen.org/checkout/order-received/1275?key=wc_order_58c965667351e
+    [ExpireDate] => 5
+    [CheckMacValue] => EAB46764247C79EAD870D63E26B9D8D5
+)
+
+03-16-2017 @ 00:03:37 - ipn check mac:7FDE2B65ECD36C4854107D08B941F226 my_check_mac_value:7FDE2B65ECD36C4854107D08B941F226
+03-16-2017 @ 00:03:37 - successful-request : 
+Array
+(
+    [MerchantID] => 1591497
+    [MerchantTradeNo] => WC1275
+    [PaymentDate] => 2017/03/16 00:03:34
+    [PaymentType] => TopUpUsed_AllPay
+    [PaymentTypeChargeFee] => 12
+    [RtnCode] => 1
+    [RtnMsg] => Succeeded
+    [SimulatePaid] => 0
+    [TradeAmt] => 1197
+    [TradeDate] => 2017/03/16 00:01:45
+    [TradeNo] => 1703160001453598
+    [CheckMacValue] => 7FDE2B65ECD36C4854107D08B941F226
+)
+
+03-16-2017 @ 00:15:41 - ipn check mac:269A69BA6973DFA8D8346527ADFA316E my_check_mac_value:269A69BA6973DFA8D8346527ADFA316E
+03-16-2017 @ 00:15:41 - successful-request : 
+Array
+(
+    [CheckMacValue] => 269A69BA6973DFA8D8346527ADFA316E
+    [MerchantID] => 1591497
+    [MerchantTradeNo] => WC1275
+    [PaymentDate] => 2017/03/16 00:03:34
+    [PaymentType] => TopUpUsed_AllPay
+    [PaymentTypeChargeFee] => 12
+    [RtnCode] => 1
+    [RtnMsg] => paid
+    [SimulatePaid] => 0
+    [TradeAmt] => 1197
+    [TradeDate] => 2017/03/16 00:01:45
+    [TradeNo] => 1703160001453598
+)
+
+03-16-2017 @ 00:21:28 - ipn check mac:269A69BA6973DFA8D8346527ADFA316E my_check_mac_value:269A69BA6973DFA8D8346527ADFA316E
+03-16-2017 @ 00:21:28 - successful-request : 
+Array
+(
+    [CheckMacValue] => 269A69BA6973DFA8D8346527ADFA316E
+    [MerchantID] => 1591497
+    [MerchantTradeNo] => WC1275
+    [PaymentDate] => 2017/03/16 00:03:34
+    [PaymentType] => TopUpUsed_AllPay
+    [PaymentTypeChargeFee] => 12
+    [RtnCode] => 1
+    [RtnMsg] => paid
+    [SimulatePaid] => 0
+    [TradeAmt] => 1197
+    [TradeDate] => 2017/03/16 00:01:45
+    [TradeNo] => 1703160001453598
+)
+
+03-16-2017 @ 00:32:10 - ipn check mac:269A69BA6973DFA8D8346527ADFA316E my_check_mac_value:269A69BA6973DFA8D8346527ADFA316E
+03-16-2017 @ 00:32:10 - successful-request : 
+Array
+(
+    [CheckMacValue] => 269A69BA6973DFA8D8346527ADFA316E
+    [MerchantID] => 1591497
+    [MerchantTradeNo] => WC1275
+    [PaymentDate] => 2017/03/16 00:03:34
+    [PaymentType] => TopUpUsed_AllPay
+    [PaymentTypeChargeFee] => 12
+    [RtnCode] => 1
+    [RtnMsg] => paid
+    [SimulatePaid] => 0
+    [TradeAmt] => 1197
+    [TradeDate] => 2017/03/16 00:01:45
+    [TradeNo] => 1703160001453598
+)
+
+03-16-2017 @ 00:36:46 - ipn check mac:269A69BA6973DFA8D8346527ADFA316E my_check_mac_value:269A69BA6973DFA8D8346527ADFA316E
+03-16-2017 @ 00:36:46 - successful-request : 
+Array
+(
+    [CheckMacValue] => 269A69BA6973DFA8D8346527ADFA316E
+    [MerchantID] => 1591497
+    [MerchantTradeNo] => WC1275
+    [PaymentDate] => 2017/03/16 00:03:34
+    [PaymentType] => TopUpUsed_AllPay
+    [PaymentTypeChargeFee] => 12
+    [RtnCode] => 1
+    [RtnMsg] => paid
+    [SimulatePaid] => 0
+    [TradeAmt] => 1197
+    [TradeDate] => 2017/03/16 00:01:45
+    [TradeNo] => 1703160001453598
+)
+
+03-16-2017 @ 21:59:38 - Generating payment form for order #WC1279. Notify URL: https://lodrorinchen.org/wc-api/WC_innovext_allpay_aio/
+03-16-2017 @ 21:59:38 - Item Name : 當季會員 x 1
+03-16-2017 @ 21:59:38 - POST to Allpay Args : 
+Array
+(
+    [MerchantID] => 1591497
+    [MerchantTradeNo] => WC1279
+    [MerchantTradeDate] => 2017/03/16 21:59:38
+    [PaymentType] => aio
+    [TotalAmount] => 1197
+    [TradeDesc] => 羅卓仁謙
+    [ItemName] => 當季會員 x 1
+    [ChoosePayment] => ALL
+    [ReturnURL] => https://lodrorinchen.org/wc-api/WC_innovext_allpay_aio/
+    [PaymentInfoURL] => https://lodrorinchen.org/wc-api/WC_innovext_allpay_aio/
+    [ClientBackURL] => https://lodrorinchen.org/checkout/order-received/1279?key=wc_order_58ca9a4a2bcac
+    [OrderResultURL] => https://lodrorinchen.org/checkout/order-received/1279?key=wc_order_58ca9a4a2bcac
+    [ExpireDate] => 5
+    [CheckMacValue] => 936FDFB25BE10F9D47A7E4A52E51A200
+)
+
+03-16-2017 @ 22:00:45 - ipn check mac:C500BD383C3571428ABFB7FD37654348 my_check_mac_value:C500BD383C3571428ABFB7FD37654348
+03-16-2017 @ 22:00:45 - successful-request : 
+Array
+(
+    [MerchantID] => 1591497
+    [MerchantTradeNo] => WC1279
+    [PaymentDate] => 2017/03/16 22:00:41
+    [PaymentType] => Credit_CreditCard
+    [PaymentTypeChargeFee] => 33
+    [RtnCode] => 1
+    [RtnMsg] => 交易成功
+    [SimulatePaid] => 0
+    [TradeAmt] => 1197
+    [TradeDate] => 2017/03/16 21:59:40
+    [TradeNo] => 1703162159405181
+    [CheckMacValue] => C500BD383C3571428ABFB7FD37654348
+)
+
+03-16-2017 @ 22:10:05 - ipn check mac:9771B535575AF57CF3BC6B1BBB64837B my_check_mac_value:9771B535575AF57CF3BC6B1BBB64837B
+03-16-2017 @ 22:10:05 - successful-request : 
+Array
+(
+    [CheckMacValue] => 9771B535575AF57CF3BC6B1BBB64837B
+    [MerchantID] => 1591497
+    [MerchantTradeNo] => WC1279
+    [PaymentDate] => 2017/03/16 22:00:41
+    [PaymentType] => Credit_CreditCard
+    [PaymentTypeChargeFee] => 33
+    [RtnCode] => 1
+    [RtnMsg] => paid
+    [SimulatePaid] => 0
+    [TradeAmt] => 1197
+    [TradeDate] => 2017/03/16 21:59:40
+    [TradeNo] => 1703162159405181
+)
+
+03-16-2017 @ 22:15:03 - ipn check mac:9771B535575AF57CF3BC6B1BBB64837B my_check_mac_value:9771B535575AF57CF3BC6B1BBB64837B
+03-16-2017 @ 22:15:03 - successful-request : 
+Array
+(
+    [CheckMacValue] => 9771B535575AF57CF3BC6B1BBB64837B
+    [MerchantID] => 1591497
+    [MerchantTradeNo] => WC1279
+    [PaymentDate] => 2017/03/16 22:00:41
+    [PaymentType] => Credit_CreditCard
+    [PaymentTypeChargeFee] => 33
+    [RtnCode] => 1
+    [RtnMsg] => paid
+    [SimulatePaid] => 0
+    [TradeAmt] => 1197
+    [TradeDate] => 2017/03/16 21:59:40
+    [TradeNo] => 1703162159405181
+)
+
+03-16-2017 @ 22:20:04 - ipn check mac:9771B535575AF57CF3BC6B1BBB64837B my_check_mac_value:9771B535575AF57CF3BC6B1BBB64837B
+03-16-2017 @ 22:20:04 - successful-request : 
+Array
+(
+    [CheckMacValue] => 9771B535575AF57CF3BC6B1BBB64837B
+    [MerchantID] => 1591497
+    [MerchantTradeNo] => WC1279
+    [PaymentDate] => 2017/03/16 22:00:41
+    [PaymentType] => Credit_CreditCard
+    [PaymentTypeChargeFee] => 33
+    [RtnCode] => 1
+    [RtnMsg] => paid
+    [SimulatePaid] => 0
+    [TradeAmt] => 1197
+    [TradeDate] => 2017/03/16 21:59:40
+    [TradeNo] => 1703162159405181
+)
+
+03-16-2017 @ 22:25:03 - ipn check mac:9771B535575AF57CF3BC6B1BBB64837B my_check_mac_value:9771B535575AF57CF3BC6B1BBB64837B
+03-16-2017 @ 22:25:03 - successful-request : 
+Array
+(
+    [CheckMacValue] => 9771B535575AF57CF3BC6B1BBB64837B
+    [MerchantID] => 1591497
+    [MerchantTradeNo] => WC1279
+    [PaymentDate] => 2017/03/16 22:00:41
+    [PaymentType] => Credit_CreditCard
+    [PaymentTypeChargeFee] => 33
+    [RtnCode] => 1
+    [RtnMsg] => paid
+    [SimulatePaid] => 0
+    [TradeAmt] => 1197
+    [TradeDate] => 2017/03/16 21:59:40
+    [TradeNo] => 1703162159405181
+)
+
+03-17-2017 @ 00:12:36 - ipn check mac:269A69BA6973DFA8D8346527ADFA316E my_check_mac_value:269A69BA6973DFA8D8346527ADFA316E
+03-17-2017 @ 00:12:36 - successful-request : 
+Array
+(
+    [CheckMacValue] => 269A69BA6973DFA8D8346527ADFA316E
+    [MerchantID] => 1591497
+    [MerchantTradeNo] => WC1275
+    [PaymentDate] => 2017/03/16 00:03:34
+    [PaymentType] => TopUpUsed_AllPay
+    [PaymentTypeChargeFee] => 12
+    [RtnCode] => 1
+    [RtnMsg] => paid
+    [SimulatePaid] => 0
+    [TradeAmt] => 1197
+    [TradeDate] => 2017/03/16 00:01:45
+    [TradeNo] => 1703160001453598
+)
+
+03-17-2017 @ 00:13:20 - ipn check mac:9771B535575AF57CF3BC6B1BBB64837B my_check_mac_value:9771B535575AF57CF3BC6B1BBB64837B
+03-17-2017 @ 00:13:20 - successful-request : 
+Array
+(
+    [CheckMacValue] => 9771B535575AF57CF3BC6B1BBB64837B
+    [MerchantID] => 1591497
+    [MerchantTradeNo] => WC1279
+    [PaymentDate] => 2017/03/16 22:00:41
+    [PaymentType] => Credit_CreditCard
+    [PaymentTypeChargeFee] => 33
+    [RtnCode] => 1
+    [RtnMsg] => paid
+    [SimulatePaid] => 0
+    [TradeAmt] => 1197
+    [TradeDate] => 2017/03/16 21:59:40
+    [TradeNo] => 1703162159405181
+)
+
+03-17-2017 @ 00:17:08 - ipn check mac:9771B535575AF57CF3BC6B1BBB64837B my_check_mac_value:9771B535575AF57CF3BC6B1BBB64837B
+03-17-2017 @ 00:17:08 - successful-request : 
+Array
+(
+    [CheckMacValue] => 9771B535575AF57CF3BC6B1BBB64837B
+    [MerchantID] => 1591497
+    [MerchantTradeNo] => WC1279
+    [PaymentDate] => 2017/03/16 22:00:41
+    [PaymentType] => Credit_CreditCard
+    [PaymentTypeChargeFee] => 33
+    [RtnCode] => 1
+    [RtnMsg] => paid
+    [SimulatePaid] => 0
+    [TradeAmt] => 1197
+    [TradeDate] => 2017/03/16 21:59:40
+    [TradeNo] => 1703162159405181
+)
+
+03-17-2017 @ 00:22:22 - ipn check mac:269A69BA6973DFA8D8346527ADFA316E my_check_mac_value:269A69BA6973DFA8D8346527ADFA316E
+03-17-2017 @ 00:22:22 - successful-request : 
+Array
+(
+    [CheckMacValue] => 269A69BA6973DFA8D8346527ADFA316E
+    [MerchantID] => 1591497
+    [MerchantTradeNo] => WC1275
+    [PaymentDate] => 2017/03/16 00:03:34
+    [PaymentType] => TopUpUsed_AllPay
+    [PaymentTypeChargeFee] => 12
+    [RtnCode] => 1
+    [RtnMsg] => paid
+    [SimulatePaid] => 0
+    [TradeAmt] => 1197
+    [TradeDate] => 2017/03/16 00:01:45
+    [TradeNo] => 1703160001453598
+)
+
+03-17-2017 @ 00:26:25 - ipn check mac:269A69BA6973DFA8D8346527ADFA316E my_check_mac_value:269A69BA6973DFA8D8346527ADFA316E
+03-17-2017 @ 00:26:25 - successful-request : 
+Array
+(
+    [CheckMacValue] => 269A69BA6973DFA8D8346527ADFA316E
+    [MerchantID] => 1591497
+    [MerchantTradeNo] => WC1275
+    [PaymentDate] => 2017/03/16 00:03:34
+    [PaymentType] => TopUpUsed_AllPay
+    [PaymentTypeChargeFee] => 12
+    [RtnCode] => 1
+    [RtnMsg] => paid
+    [SimulatePaid] => 0
+    [TradeAmt] => 1197
+    [TradeDate] => 2017/03/16 00:01:45
+    [TradeNo] => 1703160001453598
+)
+
+03-17-2017 @ 00:27:08 - ipn check mac:9771B535575AF57CF3BC6B1BBB64837B my_check_mac_value:9771B535575AF57CF3BC6B1BBB64837B
+03-17-2017 @ 00:27:08 - successful-request : 
+Array
+(
+    [CheckMacValue] => 9771B535575AF57CF3BC6B1BBB64837B
+    [MerchantID] => 1591497
+    [MerchantTradeNo] => WC1279
+    [PaymentDate] => 2017/03/16 22:00:41
+    [PaymentType] => Credit_CreditCard
+    [PaymentTypeChargeFee] => 33
+    [RtnCode] => 1
+    [RtnMsg] => paid
+    [SimulatePaid] => 0
+    [TradeAmt] => 1197
+    [TradeDate] => 2017/03/16 21:59:40
+    [TradeNo] => 1703162159405181
+)
+
+03-17-2017 @ 00:33:26 - ipn check mac:9771B535575AF57CF3BC6B1BBB64837B my_check_mac_value:9771B535575AF57CF3BC6B1BBB64837B
+03-17-2017 @ 00:33:26 - successful-request : 
+Array
+(
+    [CheckMacValue] => 9771B535575AF57CF3BC6B1BBB64837B
+    [MerchantID] => 1591497
+    [MerchantTradeNo] => WC1279
+    [PaymentDate] => 2017/03/16 22:00:41
+    [PaymentType] => Credit_CreditCard
+    [PaymentTypeChargeFee] => 33
+    [RtnCode] => 1
+    [RtnMsg] => paid
+    [SimulatePaid] => 0
+    [TradeAmt] => 1197
+    [TradeDate] => 2017/03/16 21:59:40
+    [TradeNo] => 1703162159405181
+)
+
+03-17-2017 @ 00:36:16 - ipn check mac:269A69BA6973DFA8D8346527ADFA316E my_check_mac_value:269A69BA6973DFA8D8346527ADFA316E
+03-17-2017 @ 00:36:16 - successful-request : 
+Array
+(
+    [CheckMacValue] => 269A69BA6973DFA8D8346527ADFA316E
+    [MerchantID] => 1591497
+    [MerchantTradeNo] => WC1275
+    [PaymentDate] => 2017/03/16 00:03:34
+    [PaymentType] => TopUpUsed_AllPay
+    [PaymentTypeChargeFee] => 12
+    [RtnCode] => 1
+    [RtnMsg] => paid
+    [SimulatePaid] => 0
+    [TradeAmt] => 1197
+    [TradeDate] => 2017/03/16 00:01:45
+    [TradeNo] => 1703160001453598
+)
+
+03-18-2017 @ 00:10:38 - ipn check mac:9771B535575AF57CF3BC6B1BBB64837B my_check_mac_value:9771B535575AF57CF3BC6B1BBB64837B
+03-18-2017 @ 00:10:38 - successful-request : 
+Array
+(
+    [CheckMacValue] => 9771B535575AF57CF3BC6B1BBB64837B
+    [MerchantID] => 1591497
+    [MerchantTradeNo] => WC1279
+    [PaymentDate] => 2017/03/16 22:00:41
+    [PaymentType] => Credit_CreditCard
+    [PaymentTypeChargeFee] => 33
+    [RtnCode] => 1
+    [RtnMsg] => paid
+    [SimulatePaid] => 0
+    [TradeAmt] => 1197
+    [TradeDate] => 2017/03/16 21:59:40
+    [TradeNo] => 1703162159405181
+)
+
+03-18-2017 @ 00:15:41 - ipn check mac:269A69BA6973DFA8D8346527ADFA316E my_check_mac_value:269A69BA6973DFA8D8346527ADFA316E
+03-18-2017 @ 00:15:41 - successful-request : 
+Array
+(
+    [CheckMacValue] => 269A69BA6973DFA8D8346527ADFA316E
+    [MerchantID] => 1591497
+    [MerchantTradeNo] => WC1275
+    [PaymentDate] => 2017/03/16 00:03:34
+    [PaymentType] => TopUpUsed_AllPay
+    [PaymentTypeChargeFee] => 12
+    [RtnCode] => 1
+    [RtnMsg] => paid
+    [SimulatePaid] => 0
+    [TradeAmt] => 1197
+    [TradeDate] => 2017/03/16 00:01:45
+    [TradeNo] => 1703160001453598
+)
+
+03-18-2017 @ 00:20:11 - ipn check mac:269A69BA6973DFA8D8346527ADFA316E my_check_mac_value:269A69BA6973DFA8D8346527ADFA316E
+03-18-2017 @ 00:20:11 - successful-request : 
+Array
+(
+    [CheckMacValue] => 269A69BA6973DFA8D8346527ADFA316E
+    [MerchantID] => 1591497
+    [MerchantTradeNo] => WC1275
+    [PaymentDate] => 2017/03/16 00:03:34
+    [PaymentType] => TopUpUsed_AllPay
+    [PaymentTypeChargeFee] => 12
+    [RtnCode] => 1
+    [RtnMsg] => paid
+    [SimulatePaid] => 0
+    [TradeAmt] => 1197
+    [TradeDate] => 2017/03/16 00:01:45
+    [TradeNo] => 1703160001453598
+)
+
+03-18-2017 @ 00:21:00 - ipn check mac:9771B535575AF57CF3BC6B1BBB64837B my_check_mac_value:9771B535575AF57CF3BC6B1BBB64837B
+03-18-2017 @ 00:21:00 - successful-request : 
+Array
+(
+    [CheckMacValue] => 9771B535575AF57CF3BC6B1BBB64837B
+    [MerchantID] => 1591497
+    [MerchantTradeNo] => WC1279
+    [PaymentDate] => 2017/03/16 22:00:41
+    [PaymentType] => Credit_CreditCard
+    [PaymentTypeChargeFee] => 33
+    [RtnCode] => 1
+    [RtnMsg] => paid
+    [SimulatePaid] => 0
+    [TradeAmt] => 1197
+    [TradeDate] => 2017/03/16 21:59:40
+    [TradeNo] => 1703162159405181
+)
+
+03-18-2017 @ 00:31:19 - ipn check mac:269A69BA6973DFA8D8346527ADFA316E my_check_mac_value:269A69BA6973DFA8D8346527ADFA316E
+03-18-2017 @ 00:31:19 - successful-request : 
+Array
+(
+    [CheckMacValue] => 269A69BA6973DFA8D8346527ADFA316E
+    [MerchantID] => 1591497
+    [MerchantTradeNo] => WC1275
+    [PaymentDate] => 2017/03/16 00:03:34
+    [PaymentType] => TopUpUsed_AllPay
+    [PaymentTypeChargeFee] => 12
+    [RtnCode] => 1
+    [RtnMsg] => paid
+    [SimulatePaid] => 0
+    [TradeAmt] => 1197
+    [TradeDate] => 2017/03/16 00:01:45
+    [TradeNo] => 1703160001453598
+)
+
+03-18-2017 @ 00:32:11 - ipn check mac:9771B535575AF57CF3BC6B1BBB64837B my_check_mac_value:9771B535575AF57CF3BC6B1BBB64837B
+03-18-2017 @ 00:32:11 - successful-request : 
+Array
+(
+    [CheckMacValue] => 9771B535575AF57CF3BC6B1BBB64837B
+    [MerchantID] => 1591497
+    [MerchantTradeNo] => WC1279
+    [PaymentDate] => 2017/03/16 22:00:41
+    [PaymentType] => Credit_CreditCard
+    [PaymentTypeChargeFee] => 33
+    [RtnCode] => 1
+    [RtnMsg] => paid
+    [SimulatePaid] => 0
+    [TradeAmt] => 1197
+    [TradeDate] => 2017/03/16 21:59:40
+    [TradeNo] => 1703162159405181
+)
+
+03-18-2017 @ 00:35:55 - ipn check mac:9771B535575AF57CF3BC6B1BBB64837B my_check_mac_value:9771B535575AF57CF3BC6B1BBB64837B
+03-18-2017 @ 00:35:55 - successful-request : 
+Array
+(
+    [CheckMacValue] => 9771B535575AF57CF3BC6B1BBB64837B
+    [MerchantID] => 1591497
+    [MerchantTradeNo] => WC1279
+    [PaymentDate] => 2017/03/16 22:00:41
+    [PaymentType] => Credit_CreditCard
+    [PaymentTypeChargeFee] => 33
+    [RtnCode] => 1
+    [RtnMsg] => paid
+    [SimulatePaid] => 0
+    [TradeAmt] => 1197
+    [TradeDate] => 2017/03/16 21:59:40
+    [TradeNo] => 1703162159405181
+)
+
+03-18-2017 @ 00:40:55 - ipn check mac:269A69BA6973DFA8D8346527ADFA316E my_check_mac_value:269A69BA6973DFA8D8346527ADFA316E
+03-18-2017 @ 00:40:55 - successful-request : 
+Array
+(
+    [CheckMacValue] => 269A69BA6973DFA8D8346527ADFA316E
+    [MerchantID] => 1591497
+    [MerchantTradeNo] => WC1275
+    [PaymentDate] => 2017/03/16 00:03:34
+    [PaymentType] => TopUpUsed_AllPay
+    [PaymentTypeChargeFee] => 12
+    [RtnCode] => 1
+    [RtnMsg] => paid
+    [SimulatePaid] => 0
+    [TradeAmt] => 1197
+    [TradeDate] => 2017/03/16 00:01:45
+    [TradeNo] => 1703160001453598
+)
+

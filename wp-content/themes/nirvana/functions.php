@@ -63,6 +63,7 @@ function virtual_order_payment_complete_order_status( $order_status, $order_id )
 /**
  * Custom: expire user's pmp membership when login.
  */
+/*
 function expire_pmp_membership( $user_login = null, $user = null ) {
 	// get database
 	global $wpdb;
@@ -115,7 +116,8 @@ function expire_pmp_membership( $user_login = null, $user = null ) {
 	}
 }
 add_action( 'wp_login', 'expire_pmp_membership', 10, 2 );
-
+// disabled by Sean after deployed on AWS instance
+*/
 /**
  * Custom: keep members logged in for 1 hour in case their memberships expire.
  */

@@ -1,0 +1,1209 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: PixelYourSite PRO\n"
+"POT-Creation-Date: 2016-12-16 18:13+0300\n"
+"PO-Revision-Date: 2016-10-02 21:12+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.6\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: pixelyoursite-pro.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: inc/ajax-dynamic.php:79
+msgid "Trigger on:"
+msgstr ""
+
+#: inc/ajax-dynamic.php:84 inc/html-tab-dynamic-events-list.php:57
+msgid "Click on URL"
+msgstr ""
+
+#: inc/ajax-dynamic.php:86 inc/html-tab-dynamic-events-list.php:61
+msgid "Click on CSS Selector"
+msgstr ""
+
+#: inc/ajax-dynamic.php:88 inc/html-tab-dynamic-events-list.php:65
+msgid "Scroll"
+msgstr ""
+
+#: inc/ajax-dynamic.php:90 inc/html-tab-dynamic-events-list.php:69
+msgid "Mouse Over"
+msgstr ""
+
+#: inc/ajax-dynamic.php:96
+msgid "URL Filter:"
+msgstr ""
+
+#: inc/ajax-dynamic.php:99
+msgid ""
+"If you add an URL, only elements on that page will trigger the \n"
+"\t\t\t\t\t\tevent."
+msgstr ""
+
+#: inc/ajax-dynamic.php:106
+msgid "URL (full or partial):"
+msgstr ""
+
+#: inc/ajax-dynamic.php:111
+msgid ""
+"Event will trigger when a LINK to this URL is clicked.<br>If you add * at "
+"the end of the URL string, it will match all URLs starting with this string."
+msgstr ""
+
+#: inc/ajax-dynamic.php:117
+msgid "CSS selector:"
+msgstr ""
+
+#: inc/ajax-dynamic.php:122
+msgid ""
+"The event will be fired on this CSS selector.<br>Please read about CSS "
+"Selector <a href=\"http://www.pixelyoursite.com/facebook-pixel-dynamic-events"
+"\" target=\"_blank\">here</a>."
+msgstr ""
+
+#: inc/ajax-dynamic.php:128
+msgid "Scroll position, %:"
+msgstr ""
+
+#: inc/ajax-dynamic.php:137 inc/ajax-standard.php:83
+#: inc/html-tab-woo-general.php:416 inc/html-tab-woo-general.php:483
+msgid "Event type:"
+msgstr ""
+
+#: inc/ajax-dynamic.php:146 inc/ajax-standard.php:92 inc/html-tab-edd.php:54
+#: inc/html-tab-woo-general.php:75
+msgid "Value:"
+msgstr ""
+
+#: inc/ajax-dynamic.php:149 inc/ajax-dynamic.php:171 inc/ajax-standard.php:95
+#: inc/ajax-standard.php:114
+msgid "Mandatory for purchase event only."
+msgstr ""
+
+#: inc/ajax-dynamic.php:154 inc/ajax-standard.php:100
+msgid "Currency:"
+msgstr ""
+
+#: inc/ajax-dynamic.php:159 inc/ajax-standard.php:105
+msgid "Select Currency"
+msgstr ""
+
+#: inc/ajax-dynamic.php:164 inc/ajax-standard.php:109
+msgid "Custom Currency"
+msgstr ""
+
+#: inc/ajax-dynamic.php:169
+msgid "Enter custom currency code"
+msgstr ""
+
+#: inc/ajax-dynamic.php:180 inc/ajax-standard.php:124
+msgid "Name of the page/product i.e \"Really Fast Running Shoes\"."
+msgstr ""
+
+#: inc/ajax-dynamic.php:188 inc/ajax-standard.php:133
+msgid "Product ids/SKUs associated with the event."
+msgstr ""
+
+#: inc/ajax-dynamic.php:197
+msgid "The type of content. i.e \"product\" or \"product_group\"."
+msgstr ""
+
+#: inc/ajax-dynamic.php:206 inc/ajax-standard.php:152
+msgid "Category of the page/product."
+msgstr ""
+
+#: inc/ajax-dynamic.php:214 inc/ajax-standard.php:161
+msgid "The number of items in the cart. i.e 3."
+msgstr ""
+
+#: inc/ajax-dynamic.php:223 inc/ajax-standard.php:171
+msgid "The unique order id of the successful purchase. i.e 19."
+msgstr ""
+
+#: inc/ajax-dynamic.php:232 inc/ajax-standard.php:181
+msgid "The string entered by the user for the search. i.e \"Shoes\"."
+msgstr ""
+
+#: inc/ajax-dynamic.php:241
+msgid "The status of the registration. i.e \"completed\"."
+msgstr ""
+
+#: inc/ajax-dynamic.php:247 inc/ajax-standard.php:196
+msgid "Custom event code (advanced users only):"
+msgstr ""
+
+#: inc/ajax-dynamic.php:253 inc/ajax-standard.php:201
+msgid ""
+"The code inserted in the field MUST be complete, including "
+"<code>fbq('track', 'AddToCart', { … });</code>"
+msgstr ""
+
+#: inc/ajax-dynamic.php:259 inc/ajax-standard.php:206
+msgid "Event name:"
+msgstr ""
+
+#: inc/ajax-dynamic.php:272 inc/ajax-dynamic.php:435 inc/ajax-standard.php:217
+#: inc/ajax-standard.php:334
+msgid "Param name:"
+msgstr ""
+
+#: inc/ajax-dynamic.php:279 inc/ajax-dynamic.php:436 inc/ajax-standard.php:225
+#: inc/ajax-standard.php:335
+msgid "Param value:"
+msgstr ""
+
+#: inc/ajax-dynamic.php:289 inc/ajax-dynamic.php:437 inc/ajax-standard.php:336
+msgid "Remove param"
+msgstr ""
+
+#: inc/ajax-dynamic.php:301 inc/ajax-standard.php:246
+msgid "Add Param"
+msgstr ""
+
+#: inc/ajax-dynamic.php:308 inc/ajax-standard.php:253
+msgid "Cancel"
+msgstr ""
+
+#: inc/ajax-dynamic.php:309 inc/ajax-standard.php:255
+msgid "Save"
+msgstr ""
+
+#: inc/ajax-dynamic.php:309 inc/ajax-standard.php:255
+msgid "Add"
+msgstr ""
+
+#: inc/ajax-standard.php:78
+msgid ""
+"Event will trigger when this URL is visited.<br>If you add * at the end of "
+"the URL string, it will match all URLs starting with the this string."
+msgstr ""
+
+#: inc/ajax-standard.php:143
+msgid "The type of content. i.e product or product_group."
+msgstr ""
+
+#: inc/ajax-standard.php:190
+msgid "The status of the registration. i.e completed."
+msgstr ""
+
+#: inc/html-admin.php:17
+msgid "Manage your Facebook Pixel like a PRO"
+msgstr ""
+
+#: inc/html-admin.php:22
+msgid "Facebook Pixel"
+msgstr ""
+
+#: inc/html-admin.php:23
+msgid "Events"
+msgstr ""
+
+#: inc/html-admin.php:24
+msgid "Dynamic Events"
+msgstr ""
+
+#: inc/html-admin.php:25
+msgid "WooCommerce Setup"
+msgstr ""
+
+#: inc/html-admin.php:27
+msgid "Easy Digital Downloads"
+msgstr ""
+
+#: inc/html-admin.php:81
+msgid ""
+"Please install and activate WooCommerce to enable WooCommerce integration."
+msgstr ""
+
+#: inc/html-admin.php:101
+msgid ""
+"Please install and activate Easy Digital Downloads plugin to enable Easy "
+"Digital Downloads integration."
+msgstr ""
+
+#: inc/html-admin.php:115
+msgid ""
+"If you find PixelYourSite helpful <a href=\"https://wordpress.org/support/"
+"view/plugin-reviews/pixelyoursite?rate=5#postform\" target=\"_blank\">click "
+"here to give us a 5 stars review</a>, because it will really help us."
+msgstr ""
+
+#: inc/html-box-bottom.php:11
+msgid "Useful stuff:"
+msgstr ""
+
+#: inc/html-box-bottom.php:13
+msgid "How to check your Facebook Pixel for errors with a free tool"
+msgstr ""
+
+#: inc/html-box-bottom.php:14
+msgid "How to create custom reports to better understand conversion"
+msgstr ""
+
+#: inc/html-box-bottom.php:15
+msgid "[Pro Tip]"
+msgstr ""
+
+#: inc/html-box-bottom.php:15
+msgid "How to create a Facebook Dynamic Ads Template in 10 Minutes or Less"
+msgstr ""
+
+#: inc/html-box-middle.php:14
+msgid ""
+"How to create a <strong>Facebook Dynamic Ads Product Catalog</strong> in "
+"just <i>5 minutes</i>"
+msgstr ""
+
+#: inc/html-box-middle.php:15
+msgid ""
+"Using Facebook Dynamic Ads lets you create automatic retargeting campaigns, "
+"and we made a VIDEO on how to make a Product Catalog with just a few clicks"
+msgstr ""
+
+#: inc/html-box-middle.php:17
+msgid "Watch Video"
+msgstr ""
+
+#: inc/html-box-middle.php:21
+msgid ""
+"How to create <strong>Super Powerful Custom Audiences</strong> using the "
+"<i>General Event</i> option from PixelYourSite"
+msgstr ""
+
+#: inc/html-box-middle.php:22
+msgid ""
+"The \"General Event\" option from PixelYourSite plugin can be extremely "
+"useful, so we decided to write an actionable guide about how to use it to "
+"increase your profit"
+msgstr ""
+
+#: inc/html-box-middle.php:24
+msgid "Download the guide"
+msgstr ""
+
+#: inc/html-box-top-dynamic.php:12
+msgid ""
+"First time here? <a href=\"http://www.pixelyoursite.com/facebook-pixel-"
+"plugin-help\"  target=\"_blank\">Read this before starting</a>"
+msgstr ""
+
+#: inc/html-box-top-dynamic.php:15
+msgid ""
+"Click for help: <a href=\"http://www.pixelyoursite.com/facebook-pixel-"
+"dynamic-events\" target=\"_blank\">How to use Dynamic Events - Step by Step "
+"Guide</a>"
+msgstr ""
+
+#: inc/html-box-top-edd.php:12 inc/html-box-top-general.php:12
+#: inc/html-box-top-post-event.php:12 inc/html-box-top-woo.php:12
+msgid ""
+"First time here? <a href=\"http://www.pixelyoursite.com/facebook-pixel-"
+"plugin-help\" target=\"_blank\">Read this before starting</a>"
+msgstr ""
+
+#: inc/html-box-top-edd.php:15
+msgid ""
+"Click for help: <a href=\"http://www.pixelyoursite.com/easy-digital-download-"
+"facebook-pixel-help\" target=\"_blank\">How to configure Facebook Pixel on "
+"Easy Digital Downloads - Must Read</a>"
+msgstr ""
+
+#: inc/html-box-top-post-event.php:15
+msgid ""
+"Click for help: <a href=\"http://www.pixelyoursite.com/how-to-add-facebook-"
+"pixel-events\" target=\"_blank\">How to use Events - Step by Step Guide</a>"
+msgstr ""
+
+#: inc/html-box-top-woo.php:15
+msgid ""
+"Click for help: <a href=\"http://www.pixelyoursite.com/facebook-pixel-plugin-"
+"woocommerce\" target=\"_blank\">How to configure Facebook Pixel on "
+"WooCommerce - Must Read</a>"
+msgstr ""
+
+#: inc/html-license.php:13
+msgid "Activate Plugin License"
+msgstr ""
+
+#: inc/html-license.php:24
+msgid "License Key"
+msgstr ""
+
+#: inc/html-license.php:29
+msgid "Enter your license key"
+msgstr ""
+
+#: inc/html-license.php:39
+msgid "License Status"
+msgstr ""
+
+#: inc/html-license.php:41
+msgid "active"
+msgstr ""
+
+#: inc/html-license.php:46 inc/html-license.php:50
+#: inc/html-tab-pixel-activate.php:33
+msgid "Deactivate License"
+msgstr ""
+
+#: inc/html-license.php:54
+msgid "Back to Settings"
+msgstr ""
+
+#: inc/html-license.php:62 inc/html-license.php:65
+msgid "Activate License"
+msgstr ""
+
+#: inc/html-tab-dynamic-events-general.php:25
+msgid "Add New Dynamic Event"
+msgstr ""
+
+#: inc/html-tab-dynamic-events-general.php:26
+msgid ""
+"Add standard or custom events that will trigger when a visitor clicks a link "
+"or a button on your website."
+msgstr ""
+
+#: inc/html-tab-dynamic-events-general.php:37
+msgid "Activate Dynamic Events"
+msgstr ""
+
+#: inc/html-tab-dynamic-events-general.php:45
+msgid "Process links"
+msgstr ""
+
+#: inc/html-tab-dynamic-events-general.php:48
+msgid "Process links in Post Content"
+msgstr ""
+
+#: inc/html-tab-dynamic-events-general.php:49
+msgid "The <code>the_content()</code> hook."
+msgstr ""
+
+#: inc/html-tab-dynamic-events-general.php:52
+msgid "Process links in Widgets Text"
+msgstr ""
+
+#: inc/html-tab-dynamic-events-general.php:53
+msgid "The <code>widget_text()</code> hook."
+msgstr ""
+
+#: inc/html-tab-dynamic-events-general.php:58 inc/html-tab-edd.php:352
+#: inc/html-tab-pixel-activate.php:23 inc/html-tab-std-event-general.php:23
+#: inc/html-tab-woo-general.php:554
+msgid "Save Settings"
+msgstr ""
+
+#: inc/html-tab-dynamic-events-list.php:11
+msgid "Active Dynamic Events"
+msgstr ""
+
+#: inc/html-tab-dynamic-events-list.php:27 inc/html-tab-std-event-list.php:27
+msgid "Add new event"
+msgstr ""
+
+#: inc/html-tab-dynamic-events-list.php:28 inc/html-tab-std-event-list.php:28
+msgid "Delete selected"
+msgstr ""
+
+#: inc/html-tab-dynamic-events-list.php:35
+msgid "Trigger On"
+msgstr ""
+
+#: inc/html-tab-dynamic-events-list.php:36
+msgid "URL / CSS / Position"
+msgstr ""
+
+#: inc/html-tab-dynamic-events-list.php:37 inc/html-tab-std-event-list.php:35
+msgid "Type"
+msgstr ""
+
+#: inc/html-tab-dynamic-events-list.php:38 inc/html-tab-std-event-list.php:37
+msgid "Code"
+msgstr ""
+
+#: inc/html-tab-dynamic-events-list.php:39 inc/html-tab-std-event-list.php:38
+msgid "Actions"
+msgstr ""
+
+#: inc/html-tab-dynamic-events-list.php:150
+msgid "Edit"
+msgstr ""
+
+#: inc/html-tab-dynamic-events-list.php:151
+msgid "Delete"
+msgstr ""
+
+#: inc/html-tab-edd.php:11
+msgid "Easy Digital Downloads Settings"
+msgstr ""
+
+#: inc/html-tab-edd.php:12
+msgid ""
+"Add all necessary events on Easy Digital Downloads with just a few clicks. "
+"On this tab you will find powerful options to customize the Facebook Pixel "
+"for your store."
+msgstr ""
+
+#: inc/html-tab-edd.php:15 inc/html-tab-woo-general.php:15
+msgid "Facebook Dynamic Product Ads Pixel Settings"
+msgstr ""
+
+#: inc/html-tab-edd.php:21 inc/html-tab-woo-general.php:19
+msgid "Enable Facebook Dynamic Product Ads"
+msgstr ""
+
+#: inc/html-tab-edd.php:22
+msgid ""
+"This will automatically add ViewContent on download pages, AddToCart on add "
+"to cart button click, InitiateCheckout on checkout page and Purchase on "
+"thank you page. The events will have the required <code>content_ids</code> "
+"and <code>content_type</code> fields."
+msgstr ""
+
+#: inc/html-tab-edd.php:30
+msgid "Download ID"
+msgstr ""
+
+#: inc/html-tab-edd.php:31
+msgid "Download SKU"
+msgstr ""
+
+#: inc/html-tab-edd.php:41 inc/html-tab-woo-general.php:59
+msgid "Custom Audiences Optimization"
+msgstr ""
+
+#: inc/html-tab-edd.php:43 inc/html-tab-woo-general.php:62
+msgid "Enable Additional Parameters"
+msgstr ""
+
+#: inc/html-tab-edd.php:44
+msgid ""
+"Download name will be pulled as <code>content_name</code>, and Download "
+"Category as <code>category_name</code> for all EDD events."
+msgstr ""
+
+#: inc/html-tab-edd.php:45 inc/html-tab-woo-general.php:65
+msgid ""
+"The number of items is <code>num_items</code> for InitiateCheckout and "
+"Purchase events."
+msgstr ""
+
+#: inc/html-tab-edd.php:47 inc/html-tab-pixel-general.php:27
+#: inc/html-tab-woo-general.php:68
+msgid "Track tags"
+msgstr ""
+
+#: inc/html-tab-edd.php:48
+msgid "Will pull <code>tags</code> param on all EDD events."
+msgstr ""
+
+#: inc/html-tab-edd.php:53 inc/html-tab-woo-general.php:74
+msgid "Tax Options"
+msgstr ""
+
+#: inc/html-tab-edd.php:57 inc/html-tab-woo-general.php:77
+msgid "Includes Tax"
+msgstr ""
+
+#: inc/html-tab-edd.php:59 inc/html-tab-woo-general.php:78
+msgid "Excludes Tax"
+msgstr ""
+
+#: inc/html-tab-edd.php:66 inc/html-tab-woo-general.php:87
+msgid ""
+"<strong>Important for Custom Audiences.</strong> Use this together with the "
+"General Event option."
+msgstr ""
+
+#: inc/html-tab-edd.php:67 inc/html-tab-woo-general.php:88
+msgid ""
+"Learn how to <strong>Create Powerful Custom Audiences</strong> based on "
+"Events: <strong><a href=\"http://www.pixelyoursite.com/use-general-event-"
+"existing-clients\" target=\"_blank\">Click to Download Your Free Guide</a></"
+"strong>"
+msgstr ""
+
+#: inc/html-tab-edd.php:76 inc/html-tab-woo-general.php:98
+msgid "ViewContent Event"
+msgstr ""
+
+#: inc/html-tab-edd.php:77
+msgid ""
+"ViewContent is added on Download Pages and it is required for Facebook "
+"Dynamic Product Ads."
+msgstr ""
+
+#: inc/html-tab-edd.php:83
+msgid "Enable ViewContent on Download Pages"
+msgstr ""
+
+#: inc/html-tab-edd.php:88 inc/html-tab-pixel-general.php:41
+#: inc/html-tab-woo-general.php:110
+msgid "Delay"
+msgstr ""
+
+#: inc/html-tab-edd.php:92 inc/html-tab-pixel-general.php:43
+#: inc/html-tab-woo-general.php:112
+msgid "seconds"
+msgstr ""
+
+#: inc/html-tab-edd.php:100 inc/html-tab-edd.php:152 inc/html-tab-edd.php:204
+#: inc/html-tab-edd.php:257 inc/html-tab-woo-general.php:120
+#: inc/html-tab-woo-general.php:186 inc/html-tab-woo-general.php:243
+#: inc/html-tab-woo-general.php:300
+msgid "Enable Value"
+msgstr ""
+
+#: inc/html-tab-edd.php:101 inc/html-tab-edd.php:153 inc/html-tab-edd.php:205
+#: inc/html-tab-woo-general.php:121 inc/html-tab-woo-general.php:187
+#: inc/html-tab-woo-general.php:244
+msgid "Add value and currency - Important for ROI measurement"
+msgstr ""
+
+#: inc/html-tab-edd.php:106 inc/html-tab-edd.php:158 inc/html-tab-edd.php:210
+#: inc/html-tab-edd.php:279 inc/html-tab-woo-general.php:126
+#: inc/html-tab-woo-general.php:192 inc/html-tab-woo-general.php:249
+#: inc/html-tab-woo-general.php:317
+msgid "Define value:"
+msgstr ""
+
+#: inc/html-tab-edd.php:111
+msgid "Download price"
+msgstr ""
+
+#: inc/html-tab-edd.php:118
+msgid "Percent of download price"
+msgstr ""
+
+#: inc/html-tab-edd.php:126 inc/html-tab-edd.php:178 inc/html-tab-edd.php:231
+#: inc/html-tab-edd.php:299 inc/html-tab-woo-general.php:148
+#: inc/html-tab-woo-general.php:214 inc/html-tab-woo-general.php:271
+#: inc/html-tab-woo-general.php:349 inc/html-tab-woo-general.php:457
+#: inc/html-tab-woo-general.php:525
+msgid "Use Global value"
+msgstr ""
+
+#: inc/html-tab-edd.php:137 inc/html-tab-woo-general.php:159
+msgid "AddToCart Event"
+msgstr ""
+
+#: inc/html-tab-edd.php:138 inc/html-tab-woo-general.php:160
+msgid ""
+"AddToCart event will be added  on add to cart button click and on cart page. "
+"It is required for Facebook Dynamic Product Ads."
+msgstr ""
+
+#: inc/html-tab-edd.php:144 inc/html-tab-woo-general.php:167
+msgid "Enable AddToCart on add to cart button"
+msgstr ""
+
+#: inc/html-tab-edd.php:163 inc/html-tab-edd.php:215
+msgid "Downloads price (subtotal)"
+msgstr ""
+
+#: inc/html-tab-edd.php:170 inc/html-tab-edd.php:223
+msgid "Percent of downloads value (subtotal)"
+msgstr ""
+
+#: inc/html-tab-edd.php:189 inc/html-tab-woo-general.php:225
+msgid "InitiateCheckout Event"
+msgstr ""
+
+#: inc/html-tab-edd.php:190 inc/html-tab-woo-general.php:226
+msgid ""
+"InitiateCheckout event will be enabled on the Checkout page. It is not "
+"mandatory for Facebook Dynamic Product Ads, but it is better to keep it on."
+msgstr ""
+
+#: inc/html-tab-edd.php:196 inc/html-tab-woo-general.php:234
+msgid "Enable InitiateCheckout on Checkout page"
+msgstr ""
+
+#: inc/html-tab-edd.php:242 inc/html-tab-woo-general.php:282
+msgid "Purchase Event"
+msgstr ""
+
+#: inc/html-tab-edd.php:243
+msgid ""
+"Purchase event will be enabled on the Success Page. It is mandatory for "
+"Facebook Dynamic Product Ads."
+msgstr ""
+
+#: inc/html-tab-edd.php:249
+msgid "Enable Purchase event on Success Page"
+msgstr ""
+
+#: inc/html-tab-edd.php:258
+msgid ""
+"Add value and currency - <strong>Very important for ROI \n"
+"\t\t\t\t\tmeasurement</strong>"
+msgstr ""
+
+#: inc/html-tab-edd.php:265 inc/html-tab-woo-general.php:306
+msgid "Fire the event on transaction only"
+msgstr ""
+
+#: inc/html-tab-edd.php:270 inc/html-tab-woo-general.php:309
+msgid "On"
+msgstr ""
+
+#: inc/html-tab-edd.php:272 inc/html-tab-woo-general.php:310
+msgid "Off"
+msgstr ""
+
+#: inc/html-tab-edd.php:274
+msgid ""
+"This will avoid the Purchase event to be fired when the success page is "
+"visited but no transaction has occurred. <b>It will improve conversion "
+"tracking.</b>"
+msgstr ""
+
+#: inc/html-tab-edd.php:284 inc/html-tab-woo-general.php:332
+msgid "Total"
+msgstr ""
+
+#: inc/html-tab-edd.php:291 inc/html-tab-woo-general.php:340
+msgid "Percent of Total"
+msgstr ""
+
+#: inc/html-tab-edd.php:308 inc/html-tab-woo-general.php:358
+msgid "Custom Audience Optimization:"
+msgstr ""
+
+#: inc/html-tab-edd.php:312 inc/html-tab-woo-general.php:362
+msgid "Add Town, State and Country parameters"
+msgstr ""
+
+#: inc/html-tab-edd.php:313 inc/html-tab-woo-general.php:363
+msgid ""
+"Will pull <code>town</code>, <code>state</code> and <code>country</code>"
+msgstr ""
+
+#: inc/html-tab-edd.php:321 inc/html-tab-woo-general.php:373
+msgid "Add Payment Method parameter"
+msgstr ""
+
+#: inc/html-tab-edd.php:322 inc/html-tab-woo-general.php:374
+msgid "Will pull <code>payment</code>"
+msgstr ""
+
+#: inc/html-tab-edd.php:330 inc/html-tab-woo-general.php:394
+msgid "Add Coupons parameter"
+msgstr ""
+
+#: inc/html-tab-edd.php:331 inc/html-tab-woo-general.php:395
+msgid "Will pull <code>coupon_used</code> and <code>coupon_name</code>"
+msgstr ""
+
+#: inc/html-tab-edd.php:337
+msgid ""
+"<strong>Important:</strong> For the Purchase Event to work, the client must "
+"be redirected on the EDD Success Page after payment."
+msgstr ""
+
+#: inc/html-tab-edd.php:344
+msgid "Activate Easy Digital Downloads Pixel Settings"
+msgstr ""
+
+#: inc/html-tab-pixel-activate.php:11
+msgid "Activate Facebook Pixel on Your Site"
+msgstr ""
+
+#: inc/html-tab-pixel-activate.php:15
+msgid "Activate plugin general settings"
+msgstr ""
+
+#: inc/html-tab-pixel-activate.php:30
+msgid "PixelYourSite PRO License"
+msgstr ""
+
+#: inc/html-tab-pixel-general.php:11
+msgid "General Event (optional)"
+msgstr ""
+
+#: inc/html-tab-pixel-general.php:12
+msgid ""
+"This event can be very useful for building Custom Audiences based on Custom "
+"Combination."
+msgstr ""
+
+#: inc/html-tab-pixel-general.php:16
+msgid "Enable general event setup"
+msgstr ""
+
+#: inc/html-tab-pixel-general.php:28
+msgid "Will pull <code>tags</code> param on posts and custom post types"
+msgstr ""
+
+#: inc/html-tab-pixel-general.php:33
+msgid "General event name"
+msgstr ""
+
+#: inc/html-tab-pixel-general.php:44
+msgid ""
+"Avoid retargeting bouncing users (It is better to add a lower time that the "
+"desired one because the pixel code will not load instantaneously). People "
+"that spent less time on the page will not be part of your Custom Audiences. "
+"You will not spend money retargeting them and your Lookalike Audiences will "
+"be more accurate."
+msgstr ""
+
+#: inc/html-tab-pixel-general.php:52
+msgid "Enable on Posts"
+msgstr ""
+
+#: inc/html-tab-pixel-general.php:53
+msgid ""
+"Will pull post title as <code>content_name</code> and post category name as "
+"<code>category_name</code>"
+msgstr ""
+
+#: inc/html-tab-pixel-general.php:61
+msgid "Enable on Pages"
+msgstr ""
+
+#: inc/html-tab-pixel-general.php:62
+msgid "Will pull page title as <code>content_name</code>"
+msgstr ""
+
+#: inc/html-tab-pixel-general.php:70
+msgid "Enable on Taxonomies"
+msgstr ""
+
+#: inc/html-tab-pixel-general.php:71
+msgid "Will pull taxonomy name as <code>content_name</code>"
+msgstr ""
+
+#: inc/html-tab-pixel-general.php:81
+msgid "Enable on WooCommerce Products"
+msgstr ""
+
+#: inc/html-tab-pixel-general.php:83 inc/html-tab-pixel-general.php:95
+msgid ""
+"Will pull product title as <code>content_name</code> and product category "
+"name as <code>category_name</code>, product price as <code>value</code>, "
+"currency as <code>currency</code>, post type as <code>content_type</code>."
+msgstr ""
+
+#: inc/html-tab-pixel-general.php:94
+msgid "Enable on Easy Digital Downloads Products"
+msgstr ""
+
+#: inc/html-tab-pixel-general.php:123
+#, php-format
+msgid "Enable on %s Post Type"
+msgstr ""
+
+#: inc/html-tab-pixel-general.php:130
+#, php-format
+msgid ""
+"Will pull %1$s title as <code>content_name</code> and %2$s category name as "
+"<code>category_name</code>, <code>content_type</code> as <code>%3$s</code>."
+msgstr ""
+
+#: inc/html-tab-pixel-general.php:144
+msgid ""
+"The General Event can help you create Super Powerful Custom Audiences, so we "
+"made a guide about how to use it: <a href=\"http://www.pixelyoursite.com/use-"
+"general-event-existing-clients\" target=\"_blank\">Click to download the "
+"guide</a>"
+msgstr ""
+
+#: inc/html-tab-pixel-general.php:148
+msgid "TimeOnPage Event"
+msgstr ""
+
+#: inc/html-tab-pixel-general.php:149
+msgid ""
+"TimeOnPage event will pull the time spent on each page in seconds, the page "
+"name as <code>content_name</code>, and the page ID as <code>content_ids</"
+"code>. Use it to create CustomAudiences for key pages <strong>where only "
+"people that spend a minimum amount of time matter for your business</"
+"strong>. This will improve your retargeting as well as Lookalike Audiences."
+msgstr ""
+
+#: inc/html-tab-pixel-general.php:154
+msgid "Enable TimeOnPage event setup"
+msgstr ""
+
+#: inc/html-tab-pixel-general.php:164
+msgid ""
+"You can read more about this event on <a href=\"http://www.pixelyoursite.com/"
+"facebook-pixel-plugin-help\" target=\"_blank\">our help page</a>"
+msgstr ""
+
+#: inc/html-tab-pixel-general.php:168
+msgid "Search Event"
+msgstr ""
+
+#: inc/html-tab-pixel-general.php:169
+msgid ""
+"The Search event will be active on Search page and will automatically pull "
+"search string as parameter. Useful for creating Custom Audiences."
+msgstr ""
+
+#: inc/html-tab-pixel-general.php:174
+msgid "Enable Search event setup"
+msgstr ""
+
+#: inc/html-tab-pixel-general.php:188
+msgid "Remove Pixel for:"
+msgstr ""
+
+#: inc/html-tab-pixel-general.php:218
+msgid "Guest"
+msgstr ""
+
+#: inc/html-tab-pixel-id.php:11
+msgid "Add your Pixel ID:"
+msgstr ""
+
+#: inc/html-tab-pixel-id.php:15
+msgid "Add your Facebook Pixel ID:"
+msgstr ""
+
+#: inc/html-tab-pixel-id.php:18
+msgid "Enter your Facebook Pixel ID"
+msgstr ""
+
+#: inc/html-tab-pixel-id.php:20
+msgid ""
+"Where to find the Pixel ID? <a href=\"http://www.pixelyoursite.com/facebook-"
+"pixel-plugin-help\" target=\"_blank\">Click here for help</a>"
+msgstr ""
+
+#: inc/html-tab-pixel-id.php:28
+msgid "Track traffic source and type"
+msgstr ""
+
+#: inc/html-tab-pixel-id.php:29
+msgid ""
+"Add traffic source as <code>traffic_source</code> param on all your events. "
+"URL tags (UTM) will be also tracked for each event. Use this to segment your "
+"Custom Audiences and improve your retargeting (retarget people based on when "
+"they come from, like Google, Facebook or a particular ad, for example)."
+msgstr ""
+
+#: inc/html-tab-pixel-id.php:37
+msgid "Enable Advance Matching"
+msgstr ""
+
+#: inc/html-tab-pixel-id.php:38
+msgid ""
+"Advance Matching can lead to 10% increase in attributed conversions and 20% "
+"increase in reach of retargeting campaigns - <a href=\"http://www."
+"pixelyoursite.com/enable-advance-matching-woocommerce\" target=\"_blank"
+"\">Click to read more</a>"
+msgstr ""
+
+#: inc/html-tab-pixel-id.php:43
+msgid "Output Pixel Code to:"
+msgstr ""
+
+#: inc/html-tab-pixel-id.php:45
+msgid "Head"
+msgstr ""
+
+#: inc/html-tab-pixel-id.php:46
+msgid "Footer"
+msgstr ""
+
+#: inc/html-tab-std-add-event.php:26
+msgid "Add New Event"
+msgstr ""
+
+#: inc/html-tab-std-add-event.php:27
+msgid "Add standard or custom events that will trigger when a URL is visited."
+msgstr ""
+
+#: inc/html-tab-std-event-general.php:15
+msgid "Activate Events"
+msgstr ""
+
+#: inc/html-tab-std-event-list.php:11
+msgid "Active Events"
+msgstr ""
+
+#: inc/html-tab-woo-general.php:11
+msgid "WooCommerce Pixel Settings"
+msgstr ""
+
+#: inc/html-tab-woo-general.php:12
+msgid ""
+"Add all necessary events on WooCommerce with just a few clicks. On this tab "
+"you will find powerful options to customize the Facebook Pixel for your "
+"store."
+msgstr ""
+
+#: inc/html-tab-woo-general.php:20
+msgid ""
+"This will automatically add ViewContent on product pages, AddToCart on add "
+"to cart button click and cart page, InitiateCheckout on checkout page and "
+"Purchase on thank you page. The events will have the required "
+"<code>content_ids</code> and <code>content_type</code> fields."
+msgstr ""
+
+#: inc/html-tab-woo-general.php:28
+msgid "Product ID"
+msgstr ""
+
+#: inc/html-tab-woo-general.php:29
+msgid "Product SKU"
+msgstr ""
+
+#: inc/html-tab-woo-general.php:35
+msgid "Define Variation ID:"
+msgstr ""
+
+#: inc/html-tab-woo-general.php:38
+msgid "Main product data"
+msgstr ""
+
+#: inc/html-tab-woo-general.php:39
+msgid "Variation data"
+msgstr ""
+
+#: inc/html-tab-woo-general.php:41
+msgid "Define what ID should be use for variations of variable product."
+msgstr ""
+
+#: inc/html-tab-woo-general.php:48
+msgid ""
+"<strong>Product Catalog Feed</strong> - use our dedicated plugin to create "
+"100% Dynamic Ads compatible feeds with just a few clicks:"
+msgstr ""
+
+#: inc/html-tab-woo-general.php:49
+msgid "Download Product Catalog Plugin for a big discount"
+msgstr ""
+
+#: inc/html-tab-woo-general.php:64
+msgid ""
+"Product name will be pulled as <code>content_name</code>, and Product "
+"Category as <code>category_name</code> for all WooCommerce events."
+msgstr ""
+
+#: inc/html-tab-woo-general.php:69
+msgid "Will pull <code>tags</code> param on all WooCommerce events."
+msgstr ""
+
+#: inc/html-tab-woo-general.php:99
+msgid ""
+"ViewContent is added on Product Pages and it is required for Facebook "
+"Dynamic Product Ads."
+msgstr ""
+
+#: inc/html-tab-woo-general.php:105
+msgid "Enable ViewContent on Product Pages"
+msgstr ""
+
+#: inc/html-tab-woo-general.php:131
+msgid "Product price"
+msgstr ""
+
+#: inc/html-tab-woo-general.php:139
+msgid "Percent of product price"
+msgstr ""
+
+#: inc/html-tab-woo-general.php:177
+msgid "Enable AddToCart on cart page"
+msgstr ""
+
+#: inc/html-tab-woo-general.php:197 inc/html-tab-woo-general.php:254
+msgid "Products price (subtotal)"
+msgstr ""
+
+#: inc/html-tab-woo-general.php:205 inc/html-tab-woo-general.php:262
+msgid "Percent of products value (subtotal)"
+msgstr ""
+
+#: inc/html-tab-woo-general.php:283
+msgid ""
+"Purchase event will be enabled on the Thank You page. It is mandatory for "
+"Facebook Dynamic Product Ads."
+msgstr ""
+
+#: inc/html-tab-woo-general.php:291
+msgid "Enable Purchase event on Thank You page"
+msgstr ""
+
+#: inc/html-tab-woo-general.php:301
+msgid ""
+"Add value and currency - <strong>Very important for ROI measurement</strong>"
+msgstr ""
+
+#: inc/html-tab-woo-general.php:312
+msgid ""
+"This will avoid the Purchase event to be fired when the order-received page "
+"is visited but no transaction has occurred. <b>It will improve conversion "
+"tracking.</b>"
+msgstr ""
+
+#: inc/html-tab-woo-general.php:322
+msgid "Transport is:"
+msgstr ""
+
+#: inc/html-tab-woo-general.php:325
+msgid "Included"
+msgstr ""
+
+#: inc/html-tab-woo-general.php:326
+msgid "Excluded"
+msgstr ""
+
+#: inc/html-tab-woo-general.php:384
+msgid "Add Shipping Method parameter"
+msgstr ""
+
+#: inc/html-tab-woo-general.php:385
+msgid "Will pull <code>shipping</code>"
+msgstr ""
+
+#: inc/html-tab-woo-general.php:401
+msgid ""
+"<strong>Important:</strong> For the Purchase Event to work, the client must "
+"be redirected on the default WooCommerce Thank You page after payment."
+msgstr ""
+
+#: inc/html-tab-woo-general.php:404
+msgid "WooCommerce Affiliate Products Events"
+msgstr ""
+
+#: inc/html-tab-woo-general.php:405
+msgid ""
+"You can add an event that will trigger each time an affiliate WooCommerce "
+"product button is clicked."
+msgstr ""
+
+#: inc/html-tab-woo-general.php:411
+msgid "Activate WooCommerce Affiliate Products Events"
+msgstr ""
+
+#: inc/html-tab-woo-general.php:428 inc/html-tab-woo-general.php:496
+msgid "Name of custom event:"
+msgstr ""
+
+#: inc/html-tab-woo-general.php:435
+msgid ""
+"* The Affiliate event will have all the parameters values specific for "
+"selected event."
+msgstr ""
+
+#: inc/html-tab-woo-general.php:436
+msgid ""
+"* The Custom Affiliate event will have value, currency, content_name, "
+"content_type, content_ids."
+msgstr ""
+
+#: inc/html-tab-woo-general.php:441 inc/html-tab-woo-general.php:509
+msgid "Do not pull event value"
+msgstr ""
+
+#: inc/html-tab-woo-general.php:449
+msgid "Event Value = Product Price"
+msgstr ""
+
+#: inc/html-tab-woo-general.php:464 inc/html-tab-woo-general.php:532
+msgid ""
+"* Set this if you want a unique global value every time affiliate product "
+"clicked."
+msgstr ""
+
+#: inc/html-tab-woo-general.php:471
+msgid "WooCommerce PayPal Standard Events"
+msgstr ""
+
+#: inc/html-tab-woo-general.php:472
+msgid "You can add an event that will trigger on PayPal Standard button click."
+msgstr ""
+
+#: inc/html-tab-woo-general.php:478
+msgid "Activate PayPal Standard Events"
+msgstr ""
+
+#: inc/html-tab-woo-general.php:503
+msgid ""
+"* The PayPal Standard event will have all the parameters values specific for "
+"selected event."
+msgstr ""
+
+#: inc/html-tab-woo-general.php:504
+msgid ""
+"* The Custom Affiliate event will have value, currency, content_type, "
+"content_ids."
+msgstr ""
+
+#: inc/html-tab-woo-general.php:517
+msgid "Event Value = Cart Total"
+msgstr ""
+
+#: inc/html-tab-woo-general.php:544
+msgid "Activate WooCommerce Pixel Settings"
+msgstr ""
+
+#: inc/pys-plugin-updater.php:187
+#, php-format
+msgid ""
+"There is a new version of %1$s available. %2$sView version %3$s details%4$s."
+msgstr ""
+
+#: inc/pys-plugin-updater.php:195
+#, php-format
+msgid ""
+"There is a new version of %1$s available. %2$sView version %3$s details%4$s "
+"or %5$supdate now%6$s."
+msgstr ""
+
+#: inc/pys-plugin-updater.php:337
+msgid "You do not have permission to install plugin updates"
+msgstr ""
+
+#: inc/pys-plugin-updater.php:337
+msgid "Error"
+msgstr ""
+
+#: pixelyoursite-pro.php:157
+msgid "Sorry, you are not allowed to access this page."
+msgstr ""
+
+#: pixelyoursite-pro.php:252
+msgid "Please deactivate PixelYourSite Free Version First."
+msgstr ""
+
+#: pixelyoursite-pro.php:252
+msgid "Plugin Activation"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "PixelYourSite PRO"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "http://www.pixelyoursite.com/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"With PixelYourSite Pro you can add the new Facebook Pixel with just a few "
+"clicks, create Standard Events, or use Dynamic Events. Complete WooCommerce "
+"integration with out of the box Facebook Dynamic Product Ads setup."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "PixelYourSite"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://www.pixelyoursite.com"
+msgstr ""
