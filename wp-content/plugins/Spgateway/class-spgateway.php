@@ -7,22 +7,19 @@
  * Author URI: http://www.spgateway.com/
  * Author: 智付通 spgateway
  * Plugin Name:   spgateway
- * @class 		spgateway
- * @extends		WC_Payment_Gateway
+ * @class       spgateway
+ * @extends     WC_Payment_Gateway
  * @version
- * @author 	Pya2go Libby
- * @author 	Pya2go Chael
+ * @author  Pya2go Libby
+ * @author  Pya2go Chael
  * @author  Spgateway Geoff
  */
 add_action('plugins_loaded', 'spgateway_gateway_init', 0);
-
 function spgateway_gateway_init() {
     if (!class_exists('WC_Payment_Gateway')) {
         return;
     }
-
     class WC_spgateway extends WC_Payment_Gateway {
-
         /**
          * Constructor for the gateway.
          *
@@ -34,18 +31,14 @@ function spgateway_gateway_init() {
             if(isset($_POST['woocommerce_spgateway_ExpireDate']) && (!preg_match('/^\d*$/', $_POST['woocommerce_spgateway_ExpireDate']) || $_POST['woocommerce_spgateway_ExpireDate'] < 1 || $_POST['woocommerce_spgateway_ExpireDate'] > 180)){
               $_POST['woocommerce_spgateway_ExpireDate'] = 7;
             }
-
             $this->id = 'spgateway';
             $this->icon = apply_filters('woocommerce_spgateway_icon', plugins_url('icon/spgateway.png', __FILE__));
             $this->has_fields = false;
             $this->method_title = __('spgateway', 'woocommerce');
-
             // Load the form fields.
             $this->init_form_fields();
-
             // Load the settings.
             $this->init_settings();
-
             // Define user set variables
             $this->title = $this->settings['title'];
             $this->LangType = $this->settings['LangType'];
@@ -56,14 +49,12 @@ function spgateway_gateway_init() {
             $this->ExpireDate = $this->settings['ExpireDate'];
             $this->TestMode = $this->settings['TestMode'];
             $this->notify_url = add_query_arg('wc-api', 'WC_spgateway', home_url('/')) . '&callback=return';
-
             // Test Mode
             if ($this->TestMode == 'yes') {
-                $this->gateway = "https://ccore.spgateway.com/MPG/mpg_gateway"; //測試網址
+                $this->gateway = "https://ccore.spgateway.com/MPG/period"; //測試網址
             } else {
-                $this->gateway = "https://core.spgateway.com/MPG/mpg_gateway"; //正式網址
+                $this->gateway = "https://core.spgateway.com/MPG/period"; //正式網址
             }
-
             // Actions
             add_action('woocommerce_update_options_payment_gateways_' . $this->id, array(&$this, 'process_admin_options'));
             add_action('woocommerce_thankyou_' . $this->id, array($this, 'thankyou_page'));
@@ -71,7 +62,6 @@ function spgateway_gateway_init() {
             add_action('woocommerce_api_wc_' . $this->id, array($this, 'receive_response')); //api_"class名稱(小寫)"
             add_action('woocommerce_checkout_update_order_meta', array($this, 'electronic_invoice_fields_update_order_meta'));
         }
-
         /**
          * Initialise Gateway Settings Form Fields
          *
@@ -136,7 +126,6 @@ function spgateway_gateway_init() {
                 )
             );
         }
-
         /**
          * Admin Panel Options
          * - Options for bits like 'title' and availability on a country-by-country basis
@@ -145,7 +134,6 @@ function spgateway_gateway_init() {
          * @return void
          */
         public function admin_options() {
-
             ?>
             <h3><?php _e('智付通 spgateway 收款模組', 'woocommerce'); ?></h3>
             <p><?php _e('此模組可以讓您使用智付通的spgateway收款功能', 'woocommerce'); ?></p>
@@ -165,7 +153,6 @@ function spgateway_gateway_init() {
                         jQuery('#'+this.id+'_error_msg').hide();
                         jQuery('input[type="submit"]').prop('disabled', '');
                       }
-
                   jQuery('#woocommerce_spgateway_ExpireDate')
                     .bind('keypress', function(e){
                       if(e.charCode < 48 || e.charCode > 57){
@@ -177,14 +164,12 @@ function spgateway_gateway_init() {
                         validate.call(this);
                       }
                     });
-
                   jQuery('#woocommerce_spgateway_ExpireDate')
                     .bind('input', function(e){
                       if(!this.value){
                         validate.call(this);
                         return false;
                       }
-
                       if(this.value < 1 || this.value > 180){
                         invalidate.call(this);
                       } else {
@@ -202,7 +187,6 @@ function spgateway_gateway_init() {
             </table><!--/.form-table-->
             <?php
         }
-
         /**
          * Get spgateway Args for passing to spgateway
          *
@@ -213,9 +197,7 @@ function spgateway_gateway_init() {
          * MPG參數格式
          */
         function get_spgateway_args($order) {
-
             global $woocommerce;
-
             $merchantid = $this->MerchantID; //商店代號
             $respondtype = "String"; //回傳格式
             $timestamp = time(); //時間戳記
@@ -233,7 +215,6 @@ function spgateway_gateway_init() {
                 } elseif ($item_cnt == count($item_name)) {
                     $itemdesc .= $item_value['name'] . " × " . $item_value['qty'];
                 }
-
                 //支付寶、財富通參數
                 $spgateway_args_1["Count"] = $item_cnt;
                 $spgateway_args_1["Pid$item_cnt"] = $item_value['product_id'];
@@ -241,10 +222,8 @@ function spgateway_gateway_init() {
                 $spgateway_args_1["Desc$item_cnt"] = $item_value['name'];
                 $spgateway_args_1["Price$item_cnt"] = $item_value['line_subtotal'] / $item_value['qty'];
                 $spgateway_args_1["Qty$item_cnt"] = $item_value['qty'];
-
                 $item_cnt++;
             }
-
             //CheckValue 串接
             $check_arr = array('MerchantID' => $merchantid, 'TimeStamp' => $timestamp, 'MerchantOrderNo' => $order_id, 'Version' => $version, 'Amt' => $amt);
             //按陣列的key做升幕排序
@@ -253,7 +232,6 @@ function spgateway_gateway_init() {
             $check_merstr = http_build_query($check_arr, '', '&');
             $checkvalue_str = "HashKey=" . $this->HashKey . "&" . $check_merstr . "&HashIV=" . $this->HashIV;
             $CheckValue = strtoupper(hash("sha256", $checkvalue_str));
-
             $buyer_name = $order->billing_last_name . $order->billing_first_name;
             $total_fee = $order->order_total;
             $tel = $order->billing_phone;
@@ -278,12 +256,10 @@ function spgateway_gateway_init() {
                 "Tel2" => $tel, //支付寶、財富通參數
                 "LangType" => $this->LangType
             );
-
             $spgateway_args = array_merge($spgateway_args_1, $spgateway_args_2);
             $spgateway_args = apply_filters('woocommerce_spgateway_args', $spgateway_args);
             return $spgateway_args;
         }
-
         /**
          * Output for the order received page.
          *
@@ -294,7 +270,6 @@ function spgateway_gateway_init() {
             if(isset($_REQUEST['order-received']) && isset($_REQUEST['key']) && preg_match('/^wc_order_/', $_REQUEST['key']) && isset($_REQUEST['page_id'])){
               $order = new WC_Order($_REQUEST['order-received']);
             }
-
             if (isset($_REQUEST['PaymentType']) && ($_REQUEST['PaymentType'] == "CREDIT" || $_REQUEST['PaymentType'] == "WEBATM")) {
                 if (in_array($_REQUEST['Status'], array('SUCCESS', 'CUSTOM'))) {
                     echo "交易成功<br>";
@@ -358,14 +333,12 @@ function spgateway_gateway_init() {
                 echo "交易失敗，請重新填單<br>錯誤代碼：" . $_REQUEST['Status'] . "<br>錯誤訊息：" . $_REQUEST['Message'];
             }
         }
-
         function addpadding($string, $blocksize = 32) {
             $len = strlen($string);
             $pad = $blocksize - ($len % $blocksize);
             $string .= str_repeat(chr($pad), $pad);
             return $string;
         }
-
         function curl_work($url = "", $parameter = "") {
             $curl_options = array(
                 CURLOPT_URL => $url,
@@ -384,7 +357,6 @@ function spgateway_gateway_init() {
             $retcode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
             $curl_error = curl_errno($ch);
             curl_close($ch);
-
             $return_info = array(
                 "url" => $url,
                 "sent_parameter" => $parameter,
@@ -394,7 +366,6 @@ function spgateway_gateway_init() {
             );
             return $return_info;
         }
-
         function receive_response() {  //接收回傳參數驗證
             $re_MerchantOrderNo = trim($_REQUEST['MerchantOrderNo']);
             $re_MerchantID = $_REQUEST['MerchantID'];
@@ -402,10 +373,8 @@ function spgateway_gateway_init() {
             $re_TradeNo = $_REQUEST['TradeNo'];
             $re_CheckCode = $_REQUEST['CheckCode'];
             $re_Amt = $_REQUEST['Amt'];
-
             $order = new WC_Order($re_MerchantOrderNo);
             $Amt = $order->get_total();
-
             //CheckCode 串接
             $code_arr = array('MerchantID' => $this->MerchantID, 'TradeNo' => $re_TradeNo, 'MerchantOrderNo' => $re_MerchantOrderNo, 'Amt' => $Amt);
             //按陣列的key做升幕排序
@@ -414,7 +383,6 @@ function spgateway_gateway_init() {
             $code_merstr = http_build_query($code_arr, '', '&');
             $checkcode_str = "HashIV=" . $this->HashIV . "&" . $code_merstr . "&HashKey=" . $this->HashKey;
             $CheckCode = strtoupper(hash("sha256", $checkcode_str));
-
             //檢查回傳狀態是否為成功
             if (in_array($re_Status, array('SUCCESS', 'CUSTOM'))) {
                 //檢查CheckCode是否跟自己組的一樣
@@ -445,7 +413,6 @@ function spgateway_gateway_init() {
             } else {
                 $msg = "訂單處理失敗";
             }
-
             if (isset($_GET['callback'])) {
                 echo $msg;
                 exit; //一定要有離開，才會被正常執行
@@ -462,17 +429,101 @@ function spgateway_gateway_init() {
         function generate_spgateway_form($order_id) {
             global $woocommerce;
             $order = new WC_Order($order_id);
-            $spgateway_args = $this->get_spgateway_args($order);
-
+            // $spgateway_args = $this->get_spgateway_args($order);
+            // $spgateway_args_array = array();
+            // foreach ($spgateway_args as $key => $value) {
+            //     $spgateway_args_array[] = '<input type="hidden" name="' . esc_attr($key) . '" value="' . esc_attr($value) . '" />';
+            // }
             $spgateway_gateway = $this->gateway;
-            $spgateway_args_array = array();
-            foreach ($spgateway_args as $key => $value) {
-                $spgateway_args_array[] = '<input type="hidden" name="' . esc_attr($key) . '" value="' . esc_attr($value) . '" />';
+            $shopMerID = $this->MerchantID;
+            $shopKey = $this->HashKey;
+            $shopIV = $this->HashIV;
+
+            // $periodAmt
+            if($order->get_total() == "1197") {
+                // Seanson members
+                $periodAmt = "399";
             }
-            
-	    return '<form id="spgateway" name="spgateway" action=" ' . $spgateway_gateway . ' " method="post" target="_top">' . implode('', $spgateway_args_array) . '
-				<input type="submit" class="button-alt" id="submit_spgateway_payment_form" value="' . __('前往 spgateway 支付頁面', 'spgateway') . '" />
-				</form>' . "<script>setTimeout(\"document.forms['spgateway'].submit();\",\"3000\")</script>";
+            else {
+                // Return total pay amount
+                $periodAmt = $order->get_total();
+            }
+
+            // $periodType
+            if($periodAmt == "199") {
+                // Weekly
+                $periodType = "W";
+            }
+            else if($periodAmt == "499" || $periodAmt == "399") {
+                // Monthly
+                $periodType = "M";
+            }
+            else {
+                // Invalid periodType
+                $periodType = "";
+            }
+
+            // $periodPoint
+            if($periodAmt == "199") {
+                // Weekly
+                $periodPoint = date("N");
+            }
+            else if($periodAmt == "499" || $periodAmt == "399") {
+                // Monthly
+                $periodPoint = date("d");
+            }
+            else {
+                // Invalid periodPoint
+                $periodPoint = "";
+            }
+
+            // $periodTimes
+            if($periodAmt == "199") {
+                // Weekly
+                $periodTimes = "52";
+            }
+            else if($periodAmt == "499" || $periodAmt == "399") {
+                // Monthly
+                $periodTimes = "12";
+            }
+            else {
+                // Invalid periodTimes
+                $periodTimes = "";
+            }
+
+            $postData = array(
+                "RespondType" => "String",
+                "TimeStamp" => time(),
+                "Version" => "1.1",
+                "MerOrderNo" => $shopMerID . time(),
+                "ProdDesc" => "會員權限",
+                "PeriodAmt" => $periodAmt,
+                "PeriodType" => $periodType,
+                "PeriodPoint" => $periodPoint,
+                "PeriodStartType" => 2,
+                "PeriodTimes" => $periodTimes,
+                "ReturnURL" => $this->get_return_url($order),
+                "PeriodMemo" => "",
+                "PayerEmail" => $order->billing_email,
+                // "EmailModify" => "", default enabled
+                "PaymentInfo" => "N",
+                "OrderInfo" => "N",
+                // "NotifyURL" => "",   default disabled
+                "BackURL" => "https://lodrorinchen.org/shop"
+            );
+
+            $str = http_build_query($postData);
+            $len = strlen($str);
+            $blocksize = 32;
+            $pad = $blocksize - ($len % $blocksize);
+            $str .= str_repeat(chr($pad), $pad);
+            $encrypt_data = trim(bin2hex(mcrypt_encrypt(MCRYPT_RIJNDAEL_128, $shopKey, $str, MCRYPT_MODE_CBC, $shopIV)));
+
+            return '<form id="spgateway" name="spgateway" action=" ' . $spgateway_gateway . ' " method="post" target="_top">' . '
+                        <input type="hidden" name="MerchantID_" value="' . $shopMerID . '">
+                        <input type="hidden" name="PostData_" value="' . $encrypt_data . '">
+                        <input type="submit" class="button-alt" id="submit_spgateway_payment_form" value="' . __('前往 spgateway 支付頁面', 'spgateway') . '" />
+                    </form>'. "<script>setTimeout(\"document.forms['spgateway'].submit();\",\"3000\")</script>";
         }
 
         /**
@@ -485,7 +536,6 @@ function spgateway_gateway_init() {
             echo '<p>' . __('3秒後會自動跳轉到spgateway支付頁面，或者按下方按鈕直接前往<br>', 'spgateway') . '</p>';
             echo $this->generate_spgateway_form($order);
         }
-
         /**
          * Process the payment and return the result
          *
@@ -496,7 +546,6 @@ function spgateway_gateway_init() {
         function process_payment($order_id) {
             global $woocommerce;
             $order = new WC_Order($order_id);
-
             // Empty awaiting payment session
             unset($_SESSION['order_awaiting_payment']);
             //$this->receipt_page($order_id);
@@ -505,7 +554,6 @@ function spgateway_gateway_init() {
                 'redirect' => $order->get_checkout_payment_url(true)
             );
         }
-
         /**
          * Payment form on checkout page
          *
@@ -516,25 +564,23 @@ function spgateway_gateway_init() {
             if ($this->description)
                 echo wpautop(wptexturize($this->description));
         }
-
         function check_spgateway_response() {
             echo "ok";
         }
     }
-
     /**
      * Add the gateway to WooCommerce
      *
      * @access public
      * @param array $methods
-     * @package		WooCommerce/Classes/Payment
+     * @package     WooCommerce/Classes/Payment
      * @return array
      */
     function add_spgateway_gateway($methods) {
         $methods[] = 'WC_spgateway';
         return $methods;
     }
-
     add_filter('woocommerce_payment_gateways', 'add_spgateway_gateway');
 }
 ?>
+
