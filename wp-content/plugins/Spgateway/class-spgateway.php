@@ -513,7 +513,7 @@ function spgateway_gateway_init() {
                 // "EmailModify" => "", default enabled
                 "PaymentInfo" => "N",
                 "OrderInfo" => "N",
-                // "NotifyURL" => "",   default disabled
+                "NotifyURL" => "https://lodrorinchen.org/wp-content/themes/nirvana/get-payment-status.php",    // default disabled
                 "BackURL" => "https://lodrorinchen.org/shop"
             );
 

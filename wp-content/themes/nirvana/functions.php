@@ -1,4 +1,7 @@
 <?php
+if( !isset($_SESSION) ) {
+	session_start();
+}
 update_option( 'siteurl', 'https://lodrorinchen.org' );
 update_option( 'home', 'https://lodrorinchen.org' );
 /*
@@ -29,7 +32,7 @@ require_once(get_template_directory() . "/includes/tgm.php");             // TGM
 
 
 // chouchou edited: order complete automatically
-
+/*
 add_filter( 'woocommerce_payment_complete_order_status', 'virtual_order_payment_complete_order_status', 10, 2 );
 function virtual_order_payment_complete_order_status( $order_status, $order_id ) {
   $order = new WC_Order( $order_id );
@@ -58,7 +61,7 @@ function virtual_order_payment_complete_order_status( $order_status, $order_id )
   // 對於非虛擬商品，返回訂單狀態
   return $order_status;
 }
-
+*/
 /* Below is edited by Sean, updated on Dec. 18, 2016 */
 /**
  * Custom: expire user's pmp membership when login.
@@ -136,14 +139,18 @@ function default_pmp_member_level( $user_id ) {
 add_action( 'user_register', 'default_pmp_member_level' );
 
 /**
- * Auto Complete all WooCommerce orders.
+ * Auto Complete all SUCCESSfully paid WooCommerce orders.
  */
-add_action( 'woocommerce_thankyou', 'custom_woocommerce_auto_complete_order' );
 function custom_woocommerce_auto_complete_order( $order_id ) {
-    if ( ! $order_id ) {
-        return;
-    }
+        if ( ! $order_id ) {
+                return;
+        }
 
-    $order = wc_get_order( $order_id );
-    $order->update_status( 'completed' );
+        $order = wc_get_order( $order_id );
+	include 'get-payment-status.php';
+	if( $payment_status == "SUCCESS" ) {
+                $order->update_status( 'completed' );
+        }
 }
+add_action( 'woocommerce_thankyou', 'custom_woocommerce_auto_complete_order' );
+
